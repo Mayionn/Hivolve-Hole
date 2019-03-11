@@ -27,7 +27,7 @@ public class KillOnTouch : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Object")
+        if (other.gameObject.tag == "Fire")
         {
             Destroy(other.gameObject);
 

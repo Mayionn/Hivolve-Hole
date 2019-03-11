@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 616915071}
   m_Layer: 9
   m_Name: Cube (2)
-  m_TagString: Object
+  m_TagString: Object/Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -687,7 +687,7 @@ GameObject:
   - component: {fileID: 958384190}
   m_Layer: 9
   m_Name: Cube
-  m_TagString: Object
+  m_TagString: Object/Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 1071763132}
   m_Layer: 9
   m_Name: Obj
-  m_TagString: Object
+  m_TagString: Object/Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1041,7 +1041,7 @@ GameObject:
   - component: {fileID: 1946847280}
   m_Layer: 9
   m_Name: Cube (1)
-  m_TagString: Object
+  m_TagString: Object/Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1197,7 +1197,7 @@ GameObject:
   - component: {fileID: 2097280999}
   m_Layer: 9
   m_Name: Obj
-  m_TagString: Object
+  m_TagString: Object/Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

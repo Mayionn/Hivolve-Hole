@@ -2,39 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerupSystem : MonoBehaviour
+public static class PowerupSystem
 {
-    enum Powerups
+    public enum Powerups
     {
         Fire,
         Vortex,
         Magnet,
-        duplica?,
-
+        Duplicar,
+        wallBreaking
     }
 
+    static Powerups currentPowerup;
 
-    void Start()
+    static void ChangePowerup(Powerups tmp)
     {
-
+        currentPowerup = tmp;
     }
 
-    void Update()
+    static Powerups GetPowerup()
     {
-
+        return currentPowerup;
     }
 
-    void OnTriggerEnter(Collider other)
+    static void ChoosePowerup()
     {
-        if (other.gameObject.tag == "Object")
-        {
-        }
-    }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Object")
-        {
-        }
     }
 }
