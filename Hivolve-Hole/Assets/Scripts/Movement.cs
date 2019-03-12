@@ -44,8 +44,12 @@ public class Movement : MonoBehaviour
                 }
             }
 
-            this.transform.position += mvmntVector * Speed;
+            this.transform.position += (mvmntVector * Speed) * Time.deltaTime;
         }
+
+
+        transform.position += new Vector3(Speed, 0, 0) * Input.GetAxis("Horizontal") * Time.deltaTime;
+        transform.position += new Vector3(0, 0, Speed) * Input.GetAxis("Vertical") * Time.deltaTime;
 
     }
 }

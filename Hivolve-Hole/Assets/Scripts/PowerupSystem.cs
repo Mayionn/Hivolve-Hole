@@ -6,27 +6,41 @@ public static class PowerupSystem
 {
     public enum Powerups
     {
+        None,
         Fire,
         Vortex,
         Magnet,
-        Duplicar,
-        wallBreaking
+        DoubleSize
     }
 
-    static Powerups currentPowerup;
+    public static Powerups currentPowerup = Powerups.None;
 
-    static void ChangePowerup(Powerups tmp)
+    public static void ChangePowerup(Powerups tmp)
     {
         currentPowerup = tmp;
     }
 
-    static Powerups GetPowerup()
+    public static bool GetCurrentPowerup(Powerups pw)
     {
-        return currentPowerup;
+        return currentPowerup == pw;
     }
 
-    static void ChoosePowerup()
+    public static void ChoosePowerup(int index)
     {
-
+        switch (index)
+        {
+            case 1:
+                currentPowerup = Powerups.Fire;
+                break;
+            case 2:
+                currentPowerup = Powerups.Vortex;
+                break;
+            case 3:
+                currentPowerup = Powerups.Magnet;
+                break;
+            case 4:
+                currentPowerup = Powerups.DoubleSize;
+                break;
+        }
     }
 }

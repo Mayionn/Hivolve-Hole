@@ -27,9 +27,12 @@ public class KillOnTouch : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Fire")
+        int tmp = ObjectSystem.IsObjectHittable(other.gameObject.tag);
+        if (tmp != -1)
         {
             Destroy(other.gameObject);
+
+            PowerupSystem.ChoosePowerup(tmp);
 
             targetScale += new Vector3(0.5f, 0, 0.5f);
         }

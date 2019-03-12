@@ -9,7 +9,7 @@ public class ChangeBallLayer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Object")
+        if (ObjectSystem.IsObjectHittable(other.gameObject.tag) != -1)
         {
             other.gameObject.layer = LayerOnEnter;
         }
@@ -17,7 +17,7 @@ public class ChangeBallLayer : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Object")
+        if (ObjectSystem.IsObjectHittable(other.gameObject.tag) != -1)
         {
             other.gameObject.layer = LayerOnExit;
         }
