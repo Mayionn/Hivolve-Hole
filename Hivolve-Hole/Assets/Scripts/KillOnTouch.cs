@@ -9,6 +9,8 @@ public class KillOnTouch : MonoBehaviour
     private Vector3 targetScale;
     private Vector3 currentScale;
 
+    public float sizeIncrease;
+
     public void Start()
     {
         targetScale = parent.transform.localScale;
@@ -34,7 +36,14 @@ public class KillOnTouch : MonoBehaviour
 
             PowerupSystem.ChoosePowerup(tmp);
 
-            targetScale += new Vector3(0.5f, 0, 0.5f);
+            if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+            {
+                targetScale += new Vector3(sizeIncrease * 2, 0f, sizeIncrease * 2);
+            }
+            else
+                targetScale += new Vector3(sizeIncrease, 0f, sizeIncrease);
+
+
         }
     }
 }

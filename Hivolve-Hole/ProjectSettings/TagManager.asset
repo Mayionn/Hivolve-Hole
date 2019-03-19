@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Object
   - Object/Fire
+  - Object/Vortex
   layers:
   - Default
   - TransparentFX

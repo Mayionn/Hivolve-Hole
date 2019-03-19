@@ -7,11 +7,12 @@ public static class ObjectSystem
     public static string ObjectTag = "Object";
 
     public static string[] ObjectTagList = {
-        "Object", "Object/Fire",
+        "Object", "Object/Fire", "Object/Vortex"
     };
     /*
     ? 0 Does not do anything. it's the blank object
     ? 1 is Fire
+    ? 2 is Vortex
     */
 
     public static int IsObjectHittable(string tag)

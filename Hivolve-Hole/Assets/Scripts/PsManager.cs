@@ -42,7 +42,19 @@ public class PsManager : MonoBehaviour
         }
         else
         {
-            particleSystems[0].Stop();
+            particleSystems[0].Stop(withChildren: true);
+        }
+
+        if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.Vortex))
+        {
+            if (!particleSystems[1].isPlaying)
+            {
+                particleSystems[1].Play(); // 1 is Vortex
+            }
+        }
+        else
+        {
+            particleSystems[1].Stop(withChildren: true);
         }
     }
 }
