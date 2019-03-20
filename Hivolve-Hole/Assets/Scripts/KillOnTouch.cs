@@ -32,18 +32,15 @@ public class KillOnTouch : MonoBehaviour
         int tmp = ObjectSystem.IsObjectHittable(other.gameObject.tag);
         if (tmp != -1)
         {
+            if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+            {
+                targetScale += new Vector3(other.attachedRigidbody.mass * 2, 0f, other.attachedRigidbody.mass * 2);
+            }
+            else
+                targetScale += new Vector3(other.attachedRigidbody.mass, 0f, other.attachedRigidbody.mass);
             Destroy(other.gameObject);
 
             PowerupSystem.ChoosePowerup(tmp);
-
-            if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
-            {
-                targetScale += new Vector3(sizeIncrease * 2, 0f, sizeIncrease * 2);
-            }
-            else
-                targetScale += new Vector3(sizeIncrease, 0f, sizeIncrease);
-
-
         }
     }
 }

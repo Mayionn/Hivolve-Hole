@@ -7,6 +7,9 @@ TagManager:
   - Object
   - Object/Fire
   - Object/Vortex
+  - Material/Wood
+  - Material/Metal
+  - Object/Metal
   layers:
   - Default
   - TransparentFX

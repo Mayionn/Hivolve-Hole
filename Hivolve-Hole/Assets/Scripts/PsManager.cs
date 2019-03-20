@@ -33,7 +33,7 @@ public class PsManager : MonoBehaviour
 
         Debug.Log(particleSystems[0].isPlaying);
 
-        if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.Fire))
+        if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Fire))
         {
             if (!particleSystems[0].isPlaying)
             {
@@ -45,7 +45,7 @@ public class PsManager : MonoBehaviour
             particleSystems[0].Stop(withChildren: true);
         }
 
-        if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.Vortex))
+        if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Vortex))
         {
             if (!particleSystems[1].isPlaying)
             {
@@ -55,6 +55,18 @@ public class PsManager : MonoBehaviour
         else
         {
             particleSystems[1].Stop(withChildren: true);
+        }
+
+        if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Magnet))
+        {
+            if (!particleSystems[2].isPlaying)
+            {
+                particleSystems[2].Play(); // 0 is Fire
+            }
+        }
+        else
+        {
+            particleSystems[2].Stop(withChildren: true);
         }
     }
 }

@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Force: 0.1
+  Tag: Object
 --- !u!135 &1457533841607156589
 SphereCollider:
   m_ObjectHideFlags: 0

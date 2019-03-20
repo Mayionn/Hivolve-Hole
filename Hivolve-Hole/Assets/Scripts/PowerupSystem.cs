@@ -20,7 +20,12 @@ public static class PowerupSystem
         currentPowerup = tmp;
     }
 
-    public static bool GetCurrentPowerup(Powerups pw)
+    public static Powerups GetCurrentPowerup()
+    {
+        return currentPowerup;
+    }
+
+    public static bool IsCurrentPowerup(Powerups pw)
     {
         return currentPowerup == pw;
     }
@@ -35,10 +40,10 @@ public static class PowerupSystem
             case 2:
                 currentPowerup = Powerups.Vortex;
                 break;
-            case 3:
+            case 5:
                 currentPowerup = Powerups.Magnet;
                 break;
-            case 4:
+            case 3:
                 currentPowerup = Powerups.DoubleSize;
                 break;
         }

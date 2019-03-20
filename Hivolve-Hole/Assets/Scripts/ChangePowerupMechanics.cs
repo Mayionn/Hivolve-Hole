@@ -6,24 +6,18 @@ public class ChangePowerupMechanics : MonoBehaviour
 {
     public List<GameObject> Mechanics;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.Fire))
+        if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Fire))
         {
             Mechanics[0].SetActive(true);
         }
-        else if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.Vortex))
+        else if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Vortex))
         {
             Mechanics[1].SetActive(true);
         }
-        else if (PowerupSystem.GetCurrentPowerup(PowerupSystem.Powerups.Magnet))
+        else if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Magnet))
         {
             Mechanics[2].SetActive(true);
         }
