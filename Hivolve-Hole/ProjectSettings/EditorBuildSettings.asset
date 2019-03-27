@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/samplescene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HoleTest.unity
     guid: 7755e1fa357da4e4c82822931af539a6
+  - enabled: 1
+    path: Assets/Scenes/EndlessSystem.unity
+    guid: 57f1c1d4bc258f94aa7c1605ea37f68f
   m_configObjects: {}
