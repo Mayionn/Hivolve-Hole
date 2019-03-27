@@ -7,6 +7,7 @@ public class QuestManager : MonoBehaviour
 {
     public List<GameObject> objectList;
     public List<GameObject> powerupEnablers;
+    public int QuestsCompleted;
 
     private string filePath = "Assets/TextFiles/relations.txt";
 
@@ -120,7 +121,7 @@ public class QuestManager : MonoBehaviour
                 {
                     if (numbers[x] == "\n")
                         break;
-                    relations.Add(int.Parse(numbers[x]));
+                    relations.Add(int.Parse(numbers[x]) - 1);
                 }
             }
         }
@@ -143,6 +144,11 @@ public class QuestManager : MonoBehaviour
     Vector2 CalculateConditionNumber(int questType)
     {
         return new Vector2();
+    }
+
+    float CalculateDificultyLevel(int questType)
+    {
+        return 0f;
     }
 
     void GenerateQuest()

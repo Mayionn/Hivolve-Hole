@@ -369,5 +369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectList:
   - {fileID: 841887704}
+  - {fileID: 841887704}
+  - {fileID: 841887704}
   powerupEnablers: []
+  QuestsCompleted: 0
   questObjects: []
