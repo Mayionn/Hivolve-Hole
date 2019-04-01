@@ -5,20 +5,27 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    [Header("Variables")]
+    public float MinDif;
+    public float MaxDif;
+    public int QuestsCompleted, QuestsFailed;
+    [Space(10)]
+    public TextAsset file;
     public List<GameObject> objectList;
     public List<GameObject> powerupEnablers;
-    public int QuestsCompleted;
+    [Space(10)]
+    public List<QuestObject> questObjects;
+    Quest currentQuest;
 
-    private string filePath = "Assets/TextFiles/relations.txt";
 
     [System.Serializable]
     public struct QuestObject
     {
-        public GameObject himself;
+        public float himself;
         public List<int> objectRelationList;
         public string Tag;
 
-        public QuestObject(GameObject him, string tg, List<int> relations = null)
+        public QuestObject(float him, string tg, List<int> relations = null)
         {
             himself = him;
             objectRelationList = relations;
@@ -28,13 +35,11 @@ public class QuestManager : MonoBehaviour
 
     public struct Quest
     {
-        public Vector2 objects;
+        public Vector2 objects, currentEaten, numberCondition;
         public int type;
         public string questText;
         public float timeTotal, timePassed;
         public int completed; // 0 for StillGoing, 1 for Completed, -1 for Failed;
-        public Vector2 currentEaten;
-        public Vector2 numberCondition;
 
         public Quest(Vector2 obj, int t, string txt, Vector2 conditions)
         {
@@ -53,7 +58,7 @@ public class QuestManager : MonoBehaviour
             questText = txt;
         }
 
-        public int IsCompleted(int helper)
+        public int IsCompleted()
         {
             completed = 0;
             switch (type)
@@ -93,15 +98,13 @@ public class QuestManager : MonoBehaviour
         }
     }
 
-    public List<QuestObject> questObjects;
-
     void FillObjects()
     {
         int i = 0;
         foreach (GameObject tmp in objectList)
         {
             questObjects.Add(
-                new QuestObject(objectList[i], tmp.tag, FillRelations(i))
+                new QuestObject(i, tmp.tag, FillRelations(i))
             );
             i++;
         }
@@ -110,19 +113,18 @@ public class QuestManager : MonoBehaviour
     List<int> FillRelations(int i)
     {
         List<int> relations = new List<int>();
-        if (File.Exists(filePath))
+        if (file)
         {
-            string text = File.ReadAllText(filePath);
+            string text = file.text;
             string[] lines = text.Split('\n');
-            for (int j = 0; j < lines.Length; j++)
+
+            string[] numbers = lines[i].Split(',');
+            for (int x = 0; x < numbers.Length; x++)
             {
-                string[] numbers = lines[i].Split(',');
-                for (int x = 0; x < numbers.Length; x++)
-                {
-                    if (numbers[x] == "\n")
-                        break;
-                    relations.Add(int.Parse(numbers[x]) - 1);
-                }
+                if (numbers[x] == "\n" || numbers[x] == "\r")
+                    continue;
+                int l = int.Parse(numbers[x]) - 1;
+                relations.Add(l);
             }
         }
         return relations;
@@ -143,15 +145,44 @@ public class QuestManager : MonoBehaviour
 
     Vector2 CalculateConditionNumber(int questType)
     {
-        return new Vector2();
+        float dif = CalculateDificultyLevel();
+        Vector2 retvalues = new Vector2();
+        int value = (int)Random.Range(5, 10);
+        switch (questType)
+        {
+            case 0:
+                retvalues.x = value;
+                retvalues.y = (int)dif * value;
+                break;
+            case 1:
+                retvalues.x = (int)dif * value;
+                break;
+            case 2:
+                //max 1 min
+                retvalues.x = value;
+                retvalues.y = (int)dif * 1 / 3;
+                break;
+        }
+        return retvalues;
     }
 
-    float CalculateDificultyLevel(int questType)
+    float CalculateDificultyLevel()
     {
-        return 0f;
+        //So this needs to be based on time + the number of quests already done.
+        //? What kind of curve do i want?
+        //- Myabe a logarithm with a top value. 
+        float func = Mathf.Log10(QuestsCompleted / (QuestsFailed + 1));
+        float dif = 2 * func * func + 1;
+        Debug.Log(dif);
+        if (dif > MaxDif)
+            return MaxDif;
+        else if (dif < MinDif)
+            return MinDif;
+        else
+            return dif;
     }
 
-    void GenerateQuest()
+    Quest GenerateQuest()
     {
         Quest quest = new Quest();
         int type = ChooseQuestType();
@@ -163,13 +194,13 @@ public class QuestManager : MonoBehaviour
             case 0:
                 objectsIndex = Random2RelatedObjects();
                 conditions = CalculateConditionNumber(type);
-                questText = "Eat " + conditions.x + " " + objectList[(int)objectsIndex.x].name + "\n Don't Eat " + conditions.y + " " + objectList[(int)objectsIndex.y].name;
+                questText = "Eat " + conditions.x + " " + objectList[(int)objectsIndex.x].name + "\nDon't Eat " + conditions.y + " " + objectList[(int)objectsIndex.y].name;
                 quest = new Quest(objectsIndex, type, questText, conditions);
                 break;
             case 1:
                 objectsIndex = Random2RelatedObjects();
                 conditions = CalculateConditionNumber(type);
-                questText = "Burn " + conditions.x + " " + objectList[(int)objectsIndex.x].name + "\n Can't stop burning";
+                questText = "Burn " + conditions.x + " " + objectList[(int)objectsIndex.x].name + "\nCan't stop burning";
                 quest = new Quest(objectsIndex, type, questText, conditions);
                 break;
             case 2:
@@ -180,19 +211,44 @@ public class QuestManager : MonoBehaviour
                 break;
         }
 
-        Debug.Log(quest.ToString());
+        return quest;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         FillObjects();
-        GenerateQuest();
+        currentQuest = GenerateQuest();
+        Debug.Log(currentQuest.questText);
+    }
+
+    void NewQuest()
+    {
+        currentQuest = GenerateQuest();
+        //Debug.Log(currentQuest.questText);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            currentQuest.completed = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            currentQuest.completed = -1;
+        }
+        switch (currentQuest.completed)
+        {
+            case 0:
+                break;
+            case 1:
+                QuestsCompleted++; NewQuest();
+                break;
+            case -1:
+                QuestsFailed++; NewQuest();
+                break;
+        }
     }
 }
