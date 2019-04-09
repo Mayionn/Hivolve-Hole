@@ -31,8 +31,6 @@ public class PsManager : MonoBehaviour
             once = false;
         }
 
-        Debug.Log(particleSystems[0].isPlaying);
-
         if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Fire))
         {
             if (!particleSystems[0].isPlaying)

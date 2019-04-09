@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    public CameraSystem cam;
     public GameObject targetObj;
-
-    public Vector3 targetVector;
 
     void Start()
     {
-        targetVector = this.transform.position - targetObj.transform.position;
+        cam.startVector = new Vector3(0, 11, -22);
+        cam.targetVector = cam.startVector;
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.transform.position = targetVector + targetObj.transform.position;
+        this.transform.position = Vector3.Lerp(
+            this.transform.position,
+            cam.targetVector + targetObj.transform.position,
+            Time.deltaTime * 2
+        );
     }
 }

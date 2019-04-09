@@ -5,7 +5,7 @@
 		// Render the mask after regular geometry, but before masked geometry and
 		// transparent things.
  
-		Tags {"Queue" = "Geometry-1" "RenderType" = "Opaque" "RenderPipeline" = "LightweightPipeline"}
+		Tags {"Queue" = "Geometry-1" "RenderType" = "Transparent" "RenderPipeline" = "LightweightPipeline"}
  
 		// Don't draw in the RGBA channels; just the depth buffer
  

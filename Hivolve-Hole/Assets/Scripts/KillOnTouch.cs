@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class KillOnTouch : MonoBehaviour
 {
+    public CameraSystem cam;
     public GameObject parent;
+    public GameObject cylinder;
 
     private Vector3 targetScale;
     private Vector3 currentScale;
-
-    public float sizeIncrease;
 
     public void Start()
     {
@@ -23,6 +23,8 @@ public class KillOnTouch : MonoBehaviour
                         currentScale,
                         targetScale,
                         0.1f);
+
+
 
         parent.transform.localScale = currentScale;
     }
@@ -41,6 +43,9 @@ public class KillOnTouch : MonoBehaviour
             Destroy(other.gameObject);
 
             PowerupSystem.ChoosePowerup(tmp);
+            cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
+
+            cam.newTargetVector();
         }
     }
 }

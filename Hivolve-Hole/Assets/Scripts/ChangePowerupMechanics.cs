@@ -11,14 +11,17 @@ public class ChangePowerupMechanics : MonoBehaviour
     {
         if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Fire))
         {
+            DisableAll();
             Mechanics[0].SetActive(true);
         }
         else if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Vortex))
         {
+            DisableAll();
             Mechanics[1].SetActive(true);
         }
         else if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.Magnet))
         {
+            DisableAll();
             Mechanics[2].SetActive(true);
         }
         else

@@ -8,7 +8,10 @@ public class Pull : MonoBehaviour
 
     void OnTriggerStay(Collider col)
     {
-        Vector3 a = this.transform.position - col.transform.position;
-        col.attachedRigidbody.AddForce(a * Force, ForceMode.Impulse);
+        if (col.gameObject.layer != 11)
+        {
+            Vector3 a = this.transform.position - col.transform.position;
+            col.attachedRigidbody.AddForce(a * Force, ForceMode.Impulse);
+        }
     }
 }
