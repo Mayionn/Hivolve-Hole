@@ -7,7 +7,9 @@ public static class ObjectSystem
     public static string ObjectTag = "Object";
 
     public static string[] ObjectTagList = {
-        "Object", "Object/Fire", "Object/Vortex", "Material/Wood", "Material/Metal", "Object/Metal"
+        "Object/Normal", "Object/Fire", "Object/Vortex", "Object/Metal",
+        "Material/Wood", "Material/Metal",
+        "Button/Endless", "Button/Normal"
     };
 
     /*

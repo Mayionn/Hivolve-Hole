@@ -9,7 +9,6 @@ public class CameraFollow : MonoBehaviour
 
     void Start()
     {
-        cam.startVector = new Vector3(0, 11, -22);
         cam.targetVector = cam.startVector;
     }
 
