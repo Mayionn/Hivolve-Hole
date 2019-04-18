@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventSystem : MonoBehaviour
 {
@@ -14,5 +15,10 @@ public class EventSystem : MonoBehaviour
     public void ToggleAudio()
     {
         a.enabled = !a.enabled;
+    }
+
+    public void LoadEndless()
+    {
+        SceneManager.LoadScene("EndlessSystem");
     }
 }

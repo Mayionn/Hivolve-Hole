@@ -32,27 +32,28 @@ public class KillOnTouch : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        int tmp = ObjectSystem.IsObjectHittable(other.gameObject.tag);
-        if (tmp != -1)
+        if (other.gameObject.tag.Equals("Button/Normal"))
         {
-            if (other.gameObject.tag == "Button/Endless")
-                SceneManager.LoadScene("EndlessSystem");
-            if (other.gameObject.tag == "Button/Normal")
-                SceneManager.LoadScene("Level1");
-
-
-            if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+            other.gameObject.GetComponent<LoadLevels>().Load();
+        }
+        else
+        {
+            int tmp = ObjectSystem.IsObjectHittable(other.gameObject.tag);
+            if (tmp != -1)
             {
-                targetScale += new Vector3(other.attachedRigidbody.mass * 2, 0f, other.attachedRigidbody.mass * 2);
+                if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+                {
+                    targetScale += new Vector3(other.attachedRigidbody.mass * 2, 0f, other.attachedRigidbody.mass * 2);
+                }
+                else
+                    targetScale += new Vector3(other.attachedRigidbody.mass, 0f, other.attachedRigidbody.mass);
+                Destroy(other.gameObject);
+
+                PowerupSystem.ChoosePowerup(tmp);
+                cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
+
+                cam.newTargetVector();
             }
-            else
-                targetScale += new Vector3(other.attachedRigidbody.mass, 0f, other.attachedRigidbody.mass);
-            Destroy(other.gameObject);
-
-            PowerupSystem.ChoosePowerup(tmp);
-            cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
-
-            cam.newTargetVector();
         }
     }
 }
