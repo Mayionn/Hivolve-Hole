@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class ObjectScriptableObject : ScriptableObject
+public class BufferScriptableObject : ScriptableObject
 {
     public List<GameObject> objectList;
-    public TextAsset file;
 }

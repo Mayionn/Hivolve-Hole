@@ -14,7 +14,8 @@ public class RelationsEditor : EditorWindow
 
     public ObjectScriptableObject objScp; //has a list of all objects
     public BufferScriptableObject buffer; //has a buffer list of objects
-    public string filePath;
+    public TextAsset file;
+    public string filePath = @"Assets\Resources\relations.txt";
     GameObject objParent;
     GameObject objToAdd;
 
@@ -48,9 +49,19 @@ public class RelationsEditor : EditorWindow
 
         if (GUILayout.Button("Finish"))
         {
-            //Adicionar os objectos a lista total.
-            //Escrever para o ficheiro as relaçoes. AB e BA para cada objecto.
+            AddObject(objParent, objScp.objectList);
 
+            int i = ObjectExists(objParent, objScp.objectList);
+            //Adicionar os objectos a lista total.
+            foreach (var obj in buffer.objectList)
+            {
+                AddObject(obj, objScp.objectList);
+                int j = ObjectExists(obj, objScp.objectList);
+
+                WriteRelations(i, j);
+                WriteRelations(j, i);
+            }
+            //Escrever para o ficheiro as relaçoes. AB e BA para cada objecto.
             ResetAll();
         }
     }
@@ -60,20 +71,18 @@ public class RelationsEditor : EditorWindow
 
     }
 
-    int AddObject(GameObject a, List<GameObject> list)
+    void AddObject(GameObject a, List<GameObject> list)
     {
         if (ObjectExists(a, list) == -1)
         {
             list.Add(a);
         }
-
-        return ObjectExists(a, list);
     }
 
-    void WriteRelations(int i, int[] j)
+    void WriteRelations(int i, int j)
     {
         //StreamReader stream = new StreamReader(filePath); // all text.
-        string[] text = File.ReadAllLines(filePath);
+        string[] text = objScp.file.text.Split('\n');
         //stream.ReadToEnd();
         //stream.Close();
 
@@ -83,34 +92,33 @@ public class RelationsEditor : EditorWindow
         //if index bigger than size. You need to add.
         if (i >= lines.Count)
         {
+            //!add lines until i reach i. Then do i.
+
             string line = "";
             //writer.Write("\n");
-            foreach (int a in j)
-            {
-                string.Concat(line, $"{a},");
-                //lines.Add($"{a},")
-                //writer.Write($"{a},");
-            }
+
+            string.Concat(line, $"{j},");
+            //lines.Add($"{a},")
+            //writer.Write($"{a},");
+
             lines.Add(line);
 
             text = lines.ToArray();
         }
         else //if already has objects there.
         {
-            List<string> numbers = new List<string>(lines[i].Split(','));
+            List<string> numbers = new List<string>(lines[i].Split(',')); //!this is null. Can't be null check if null
 
             //if already has that object related
-            foreach (int a in j)
+            string line = "";
+            if (numbers.IndexOf($"{j}") == -1)
             {
-                string line = "";
-                if (numbers.FindIndex(o => int.Parse(o) == a) == -1)
-                {
-                    string.Concat(line, $",{a}");
-                    //writer.Write($",{a}");
-                }
-
-                string.Concat(lines[i], line);
+                string.Concat(line, $",{j}");
+                //writer.Write($",{a}");
             }
+            string.Concat(lines[i], line);
+
+            text = lines.ToArray();
         }
 
         File.WriteAllLines(filePath, text);
