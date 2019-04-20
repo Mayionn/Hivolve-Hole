@@ -463,9 +463,6 @@ MonoBehaviour:
   MaxDif: 3
   QuestsCompleted: 0
   QuestsFailed: 0
-  file: {fileID: 4900000, guid: d186eba2c58fa5f458c918efb5e83f57, type: 3}
-  objectList:
-  - {fileID: 1825879341}
-  - {fileID: 1708016776}
+  objScp: {fileID: 11400000, guid: 4c3381ff448bb794798603c153aca84d, type: 2}
   powerupEnablers: []
   questObjects: []

@@ -47,7 +47,7 @@ public class RelationsEditor : EditorWindow
 
         GUILayout.Space(10);
 
-        if (GUILayout.Button("Finish"))
+        if (GUILayout.Button("Finish") && objParent != null)
         {
             AddObject(objParent, objScp.objectList);
 
@@ -68,7 +68,8 @@ public class RelationsEditor : EditorWindow
 
     void ResetAll()
     {
-
+        objParent = objToAdd = null;
+        buffer.objectList.Clear();
     }
 
     void AddObject(GameObject a, List<GameObject> list)
@@ -82,48 +83,54 @@ public class RelationsEditor : EditorWindow
     void WriteRelations(int i, int j)
     {
         //StreamReader stream = new StreamReader(filePath); // all text.
-        string[] text = objScp.file.text.Split('\n');
         //stream.ReadToEnd();
         //stream.Close();
 
+        string[] text = File.ReadAllLines(filePath);
+
         //StreamWriter writer = new StreamWriter(filePath, true);
+        //string[] text = objScp.file.text.Split('\n');
 
         List<string> lines = new List<string>(text); // divide by /n
-        //if index bigger than size. You need to add.
-        if (i >= lines.Count)
+                                                     //if index bigger than size. You need to add.
+        if (i > lines.Count - 1)
         {
-            //!add lines until i reach i. Then do i.
-
             string line = "";
             //writer.Write("\n");
 
-            string.Concat(line, $"{j},");
+            while (lines.Count <= i)
+            {
+                lines.Add(line);
+            }
+
+            line = string.Concat(line, $"{j}");
             //lines.Add($"{a},")
             //writer.Write($"{a},");
 
-            lines.Add(line);
+            lines[i] = line;
 
             text = lines.ToArray();
         }
         else //if already has objects there.
         {
-            List<string> numbers = new List<string>(lines[i].Split(',')); //!this is null. Can't be null check if null
+            List<string> numbers = new List<string>(lines[i].Split(','));
+            string line = "";
 
             //if already has that object related
-            string line = "";
-            if (numbers.IndexOf($"{j}") == -1)
+            if (numbers[0].Equals(""))
             {
-                string.Concat(line, $",{j}");
-                //writer.Write($",{a}");
+                line = string.Concat(line, $"{j}");
             }
-            string.Concat(lines[i], line);
+            else if (numbers.IndexOf($"{j}") == -1)
+            {
+                line = string.Concat(line, $",{j}");
+            }
+            lines[i] = string.Concat(lines[i], line);
 
             text = lines.ToArray();
         }
 
         File.WriteAllLines(filePath, text);
-
-        //writer.Close();
     }
 
     int ObjectExists(GameObject obj, List<GameObject> list)

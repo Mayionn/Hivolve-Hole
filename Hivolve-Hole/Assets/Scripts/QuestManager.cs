@@ -10,13 +10,11 @@ public class QuestManager : MonoBehaviour
     public float MaxDif;
     public int QuestsCompleted, QuestsFailed;
     [Space(10)]
-    public TextAsset file;
-    public List<GameObject> objectList;
+    public ObjectScriptableObject objScp;
     public List<GameObject> powerupEnablers;
     [Space(10)]
     public List<QuestObject> questObjects;
     Quest currentQuest;
-
 
     [System.Serializable]
     public struct QuestObject
@@ -101,7 +99,7 @@ public class QuestManager : MonoBehaviour
     void FillObjects()
     {
         int i = 0;
-        foreach (GameObject tmp in objectList)
+        foreach (GameObject tmp in objScp.objectList)
         {
             questObjects.Add(
                 new QuestObject(i, tmp.tag, FillRelations(i))
@@ -113,19 +111,13 @@ public class QuestManager : MonoBehaviour
     List<int> FillRelations(int i)
     {
         List<int> relations = new List<int>();
-        if (file)
-        {
-            string text = file.text;
-            string[] lines = text.Split('\n');
+        string[] lines = File.ReadAllLines(objScp.filePath);
 
-            string[] numbers = lines[i].Split(',');
-            for (int x = 0; x < numbers.Length; x++)
-            {
-                if (numbers[x] == "\n" || numbers[x] == "\r")
-                    continue;
-                int l = int.Parse(numbers[x]) - 1;
-                relations.Add(l);
-            }
+        string[] numbers = lines[i].Split(',');
+        for (int x = 0; x < numbers.Length; x++)
+        {
+            int l = int.Parse(numbers[x]); //? maybe needs a -1
+            relations.Add(l);
         }
         return relations;
     }
@@ -158,25 +150,24 @@ public class QuestManager : MonoBehaviour
                 retvalues.x = (int)dif * value;
                 break;
             case 2:
-                //max 1 min
+                //max 120 seconds //min 
                 retvalues.x = value;
-                retvalues.y = (int)dif * 1 / 3;
+                retvalues.y = (int)dif * 40;
                 break;
         }
         return retvalues;
     }
 
-    float CalculateDificultyLevel()
+    float CalculateDificultyLevel() //! needs a rewrite.
     {
         //So this needs to be based on time + the number of quests already done.
         //? What kind of curve do i want?
-        //- Myabe a logarithm with a top value. 
+        //- Maybe a logarithm with a top value. 
         float func = Mathf.Log10(QuestsCompleted / (QuestsFailed + 1));
         float dif = 2 * func * func + 1;
-        Debug.Log(dif);
         if (dif > MaxDif)
             return MaxDif;
-        else if (dif < MinDif)
+        if (dif < MinDif)
             return MinDif;
         else
             return dif;
@@ -194,19 +185,19 @@ public class QuestManager : MonoBehaviour
             case 0:
                 objectsIndex = Random2RelatedObjects();
                 conditions = CalculateConditionNumber(type);
-                questText = "Eat " + conditions.x + " " + objectList[(int)objectsIndex.x].name + "\nDon't Eat " + conditions.y + " " + objectList[(int)objectsIndex.y].name;
+                questText = $"Eat {conditions.x} {objScp.objectList[(int)objectsIndex.x].name} \nDon't Eat {conditions.y} {objScp.objectList[(int)objectsIndex.y].name}";
                 quest = new Quest(objectsIndex, type, questText, conditions);
                 break;
             case 1:
                 objectsIndex = Random2RelatedObjects();
                 conditions = CalculateConditionNumber(type);
-                questText = "Burn " + conditions.x + " " + objectList[(int)objectsIndex.x].name + "\nCan't stop burning";
+                questText = $"Burn {conditions.x} {objScp.objectList[(int)objectsIndex.x].name} \nCan't stop burning";
                 quest = new Quest(objectsIndex, type, questText, conditions);
                 break;
             case 2:
                 objectsIndex = Random2RelatedObjects();
                 conditions = CalculateConditionNumber(type);
-                questText = "Don't eat " + conditions.x + " " + objectList[(int)objectsIndex.x].name + " for " + conditions.y + " minutes";
+                questText = $"Don't eat {conditions.x} {objScp.objectList[(int)objectsIndex.x].name} for {conditions.y} seconds";
                 quest = new Quest(objectsIndex, type, questText, conditions);
                 break;
         }
@@ -219,7 +210,6 @@ public class QuestManager : MonoBehaviour
     {
         FillObjects();
         currentQuest = GenerateQuest();
-        Debug.Log(currentQuest.questText);
     }
 
     void NewQuest()
