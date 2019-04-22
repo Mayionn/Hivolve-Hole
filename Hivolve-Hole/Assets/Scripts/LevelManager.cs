@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public List<GameObject> ObjPowerups;
-    public List<GameObject> Obj;
+    public ObjectScriptableObject objScp;
 
     //? How many types of puzzles. Level ends when you eat all the objects.
     //- 1. Burn
@@ -45,8 +45,8 @@ public class LevelManager : MonoBehaviour
     struct Level
     {
         public List<GameObject> objectList;
-        public List<LevelType> types;
         //- What about this being a list of types instead. That way i don't need to have the BV and company around.
+        public List<LevelType> types;
         float expectedTimeFrame; //maybe
         float dificultyLevel;
 
@@ -102,7 +102,7 @@ public class LevelManager : MonoBehaviour
                 powerupsNum--;
                 t.Add(a);
             }
-        } while (powerupsNum > 0);
+        } while (powerupsNum >= 0);
 
         return new Level(t);
     }

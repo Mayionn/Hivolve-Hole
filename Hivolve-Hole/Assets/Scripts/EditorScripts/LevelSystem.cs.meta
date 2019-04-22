@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3c236d2fda31ccc429f4feecfc9f972f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_PersistentViewDataDictionary: {instanceID: 0}
+  - objScp: {fileID: 11400000, guid: 4c3381ff448bb794798603c153aca84d, type: 2}
+  - buffer: {fileID: 11400000, guid: 43033e013b40321439f4179f85d57d6d, type: 2}
+  - file: {fileID: 4900000, guid: d186eba2c58fa5f458c918efb5e83f57, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
