@@ -12,6 +12,8 @@ public class KillOnTouch : MonoBehaviour
     private Vector3 targetScale;
     private Vector3 currentScale;
 
+    public GameScriptableObject gm;
+
     public void Start()
     {
         targetScale = parent.transform.localScale;
@@ -47,6 +49,8 @@ public class KillOnTouch : MonoBehaviour
                 }
                 else
                     targetScale += new Vector3(other.attachedRigidbody.mass, 0f, other.attachedRigidbody.mass);
+
+                //gm.levelGameObjects.Remove(other.gameObject); //!BUG HERE
                 Destroy(other.gameObject);
 
                 PowerupSystem.ChoosePowerup(tmp);

@@ -6,4 +6,7 @@ using UnityEngine;
 public class GameScriptableObject : ScriptableObject
 {
     public bool paused;
+    public bool finished;
+
+    public List<GameObject> levelGameObjects;
 }
