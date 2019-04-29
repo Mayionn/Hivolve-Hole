@@ -17,7 +17,17 @@ ModelImporter:
     3300002: Egg
     4300000: Beef
     4300002: Egg
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Egg
+    second: {fileID: 2100000, guid: da2bf251689119f41beeb5234b4cf770, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steak
+    second: {fileID: 2100000, guid: ebd9fa88909e2e24699d8ccb608b16bc, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

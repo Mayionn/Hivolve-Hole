@@ -17,7 +17,17 @@ ModelImporter:
     3300002: Cylinder022
     4300000: Cylinder021
     4300002: Cylinder022
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Champagne Bottle
+    second: {fileID: 2100000, guid: 935faf943b370a247bfb44ebd3e53646, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Champagne Glass + Ice Cubes
+    second: {fileID: 2100000, guid: 827cb7ab14d225d48b4ba56bac6bd4d4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

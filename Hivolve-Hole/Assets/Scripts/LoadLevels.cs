@@ -14,6 +14,6 @@ public class LoadLevels : MonoBehaviour
 
     void LoadLevel(int x)
     {
-        SceneManager.LoadScene($"Level{x}");
+        SceneManager.LoadScene($"Nivel{x}");
     }
 }

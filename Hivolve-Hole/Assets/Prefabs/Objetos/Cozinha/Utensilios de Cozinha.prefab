@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1341900069}
   m_Layer: 0
   m_Name: Utensilios de Cozinha
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 1344318906708117214}
   m_Layer: 0
   m_Name: Box004
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 8686193152944107663}
   m_Layer: 0
   m_Name: Box008
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 8497162515171300180}
   m_Layer: 0
   m_Name: Box007
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 5876976932586846228}
   m_Layer: 0
   m_Name: Box003
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 8160733598907780232}
   m_Layer: 0
   m_Name: Box001
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 5821494993409240620}
   m_Layer: 0
   m_Name: Box005
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 2207700968730388029}
   m_Layer: 0
   m_Name: Box006
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 643729396781518626}
   m_Layer: 0
   m_Name: Box009
-  m_TagString: Untagged
+  m_TagString: Material/Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

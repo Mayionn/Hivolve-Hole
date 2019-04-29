@@ -8,11 +8,10 @@ public class Movement : MonoBehaviour
 
     public float Speed;
 
+    public GameScriptableObject gm;
+
     Vector2 joystickPosition;
     Vector3 mvmntVector;
-
-    GameObject obj;
-    bool spawned;
 
     void Start()
     {
@@ -24,32 +23,36 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount > 0)
+        if (!gm.paused)
         {
-            Touch touchInput = Input.GetTouch(0);
 
-            if (touchInput.position.y < joystickPosition.y * 2)
+            if (Input.touchCount > 0)
             {
-                if (touchInput.phase == TouchPhase.Began)
-                {
-                    Debug.Log("Tapped");
-                }
-                else if (touchInput.phase == TouchPhase.Moved)
-                {
-                    mvmntVector = touchInput.position - joystickPosition;
-                    mvmntVector.Normalize();
+                Touch touchInput = Input.GetTouch(0);
 
-                    mvmntVector.z = mvmntVector.y;
-                    mvmntVector.y = 0;
+                if (touchInput.position.y < joystickPosition.y * 2)
+                {
+                    if (touchInput.phase == TouchPhase.Began)
+                    {
+                        Debug.Log("Tapped");
+                    }
+                    else if (touchInput.phase == TouchPhase.Moved)
+                    {
+                        mvmntVector = touchInput.position - joystickPosition;
+                        mvmntVector.Normalize();
+
+                        mvmntVector.z = mvmntVector.y;
+                        mvmntVector.y = 0;
+                    }
                 }
+
+                this.transform.position += (mvmntVector * Speed) * Time.deltaTime;
             }
-
-            this.transform.position += (mvmntVector * Speed) * Time.deltaTime;
+            transform.position += new Vector3(Speed, 0, 0) * Input.GetAxis("Horizontal") * Time.deltaTime;
+            transform.position += new Vector3(0, 0, Speed) * Input.GetAxis("Vertical") * Time.deltaTime;
         }
 
 
-        transform.position += new Vector3(Speed, 0, 0) * Input.GetAxis("Horizontal") * Time.deltaTime;
-        transform.position += new Vector3(0, 0, Speed) * Input.GetAxis("Vertical") * Time.deltaTime;
 
     }
 }

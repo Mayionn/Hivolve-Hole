@@ -17,7 +17,17 @@ ModelImporter:
     3300002: Box019
     4300000: Box018
     4300002: Box019
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box Bottom
+    second: {fileID: 2100000, guid: 2bcecc83cf489d54295c2d52a9bbafd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box Top
+    second: {fileID: 2100000, guid: c9130805f1ac84b4ba004b2b694e5d99, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

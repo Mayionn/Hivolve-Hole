@@ -62,7 +62,17 @@ ModelImporter:
     4300016: frie4
     4300018: frie7
     4300020: frie8
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chips + Cheese
+    second: {fileID: 2100000, guid: 6db55d169df4b4c45aab9e3639aae112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potatoes Container
+    second: {fileID: 2100000, guid: 807ed21eab3ec1e4a9dadd716792f022, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

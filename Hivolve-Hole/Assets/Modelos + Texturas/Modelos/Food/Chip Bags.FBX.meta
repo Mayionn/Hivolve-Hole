@@ -54,7 +54,27 @@ ModelImporter:
     4300012: Plane007
     4300014: Plane008
     4300016: Plane009
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chips + Cheese
+    second: {fileID: 2100000, guid: 58feda3ccce56894ea974f06ac5f19f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #23'
+    second: {fileID: 2100000, guid: 46662111e71f22948bb39951e9478ef4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potato Chip Bag 1
+    second: {fileID: 2100000, guid: 5e0702726d7ed6e41bd9a66182bdeb93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potato Chip Bag 2
+    second: {fileID: 2100000, guid: d0b5a00cb33acab4684be08e072d4171, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

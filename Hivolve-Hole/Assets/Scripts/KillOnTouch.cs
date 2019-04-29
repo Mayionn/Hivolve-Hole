@@ -30,7 +30,7 @@ public class KillOnTouch : MonoBehaviour
         parent.transform.localScale = currentScale;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag.Equals("Button/Normal"))
         {

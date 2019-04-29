@@ -7,6 +7,10 @@ public class EventSystem : MonoBehaviour
 {
     AudioListener a;
 
+    public GameScriptableObject gm;
+    public GameObject PauseObj;
+    public GameObject midGameObj;
+
     void Start()
     {
         a = this.GetComponent<AudioListener>();
@@ -21,4 +25,19 @@ public class EventSystem : MonoBehaviour
     {
         SceneManager.LoadScene("EndlessSystem");
     }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("ChooseLevelMenu");
+    }
+
+    public void PauseGame()
+    {
+        gm.paused = !gm.paused;
+        Physics.autoSimulation = !gm.paused;
+
+        PauseObj.SetActive(gm.paused);
+        midGameObj.SetActive(!gm.paused);
+    }
+
 }

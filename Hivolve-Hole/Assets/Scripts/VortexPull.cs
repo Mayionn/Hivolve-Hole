@@ -5,7 +5,6 @@ using UnityEngine;
 public class VortexPull : MonoBehaviour
 {
     public float Force;
-    public string Tag;
 
     void OnTriggerStay(Collider col)
     {

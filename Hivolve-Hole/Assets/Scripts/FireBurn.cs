@@ -15,7 +15,7 @@ public class FireBurn : MonoBehaviour
     void OnTriggerStay(Collider col)
     {
         int tmp = ObjectSystem.IsObjectHittable(col.gameObject.tag);
-        if (tmp == 3)
+        if (tmp == 4)
         {
             Destroy(col.gameObject);
 

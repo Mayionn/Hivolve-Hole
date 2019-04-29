@@ -17,7 +17,17 @@ ModelImporter:
     3300002: Soda2
     4300000: Soda
     4300002: Soda2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cup 1
+    second: {fileID: 2100000, guid: d15a84dd1c92f304fb883c24e684a584, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cup 2
+    second: {fileID: 2100000, guid: f1d1c5ec5ae66db4fbdb08f6960efdfd, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

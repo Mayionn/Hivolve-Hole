@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea9769f7c3144f478f1b5f87a017ebb, type: 3}
   m_Name: CameraGame
   m_EditorClassIdentifier: 
-  targetVector: {x: 0, y: 14.666667, z: -29.333334}
+  targetVector: {x: 0, y: 11, z: -22}
   startVector: {x: 0, y: 11, z: -22}
-  i: 0
+  i: 1

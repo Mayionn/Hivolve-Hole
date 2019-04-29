@@ -9,7 +9,7 @@ public class SetScale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.localScale += new Vector3(
+        this.gameObject.transform.localScale = new Vector3(
             target.transform.localScale.x,
              target.transform.localScale.x,
               target.transform.localScale.z

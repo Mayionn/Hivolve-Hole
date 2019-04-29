@@ -106,7 +106,37 @@ ModelImporter:
     4300032: Pepper3
     4300034: Pepper2
     4300036: Pepper1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bun + Chopsticks + Pizza Box
+    second: {fileID: 2100000, guid: 4640e8af79520dc41b6382882122451e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chips + Cheese
+    second: {fileID: 2100000, guid: 6db55d169df4b4c45aab9e3639aae112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lettuce + Pepper
+    second: {fileID: 2100000, guid: 7eb22820c13a6ae43a885095698e1297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meat Patty + Pepperoni + Tomato
+    second: {fileID: 2100000, guid: 4db3993d47d0c4049a5d642cca50ee81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom + Burger Seeds
+    second: {fileID: 2100000, guid: db606b05fc542af4ea083fa56645c2ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Onion
+    second: {fileID: 2100000, guid: a65867a744fcb434388434ed21f5a08f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

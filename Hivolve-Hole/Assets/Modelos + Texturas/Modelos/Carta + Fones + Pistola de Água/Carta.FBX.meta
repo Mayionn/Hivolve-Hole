@@ -10,7 +10,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Box002
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Carta Atr\xE1s"
+    second: {fileID: 2100000, guid: 6327a0e75c39e5442aad5fc8aacfa0e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Carta Frente
+    second: {fileID: 2100000, guid: 5513798bfe3dfc140b8e9ba5ef70de17, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

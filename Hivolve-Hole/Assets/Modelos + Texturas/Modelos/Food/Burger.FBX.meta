@@ -116,7 +116,37 @@ ModelImporter:
     4300036: Seed12
     4300038: Seed13
     4300040: Lettuce
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bun + Chopsticks + Pizza Box
+    second: {fileID: 2100000, guid: f4f9cd963858d6440abcc34493a71c54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chips + Cheese
+    second: {fileID: 2100000, guid: 6db55d169df4b4c45aab9e3639aae112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lettuce
+    second: {fileID: 2100000, guid: 47b60770986c07f45bbc05db09d5b6f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meat Patty + Pepperoni + Tomato
+    second: {fileID: 2100000, guid: 4db3993d47d0c4049a5d642cca50ee81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushroom + Burger Seeds
+    second: {fileID: 2100000, guid: c7e7cf65f7324d642a8df5fa67e8eec4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 2f2b95b5f5d9e5a439e15ed12dddf8f8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

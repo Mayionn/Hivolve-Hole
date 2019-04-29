@@ -17,7 +17,17 @@ ModelImporter:
     3300002: WineBottle
     4300000: WineBottle
     4300002: BeerBottle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass Bottle 1
+    second: {fileID: 2100000, guid: 827cb7ab14d225d48b4ba56bac6bd4d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass Bottle 2
+    second: {fileID: 2100002, guid: fd59fc354a9056d41835bbf4113ef627, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
