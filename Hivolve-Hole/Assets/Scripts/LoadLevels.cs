@@ -14,6 +14,9 @@ public class LoadLevels : MonoBehaviour
 
     void LoadLevel(int x)
     {
-        SceneManager.LoadScene($"Nivel{x}");
+        if (x == -1)
+            SceneManager.LoadScene("ChooseLevelMenu");
+        else
+            SceneManager.LoadScene($"Nivel{x}");
     }
 }
