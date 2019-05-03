@@ -7,6 +7,7 @@ public class GameScriptableObject : ScriptableObject
 {
     public bool paused;
     public bool finished;
+    public bool muted;
 
-    public List<GameObject> levelGameObjects;
+    public List<Transform> levelGameObjects;
 }

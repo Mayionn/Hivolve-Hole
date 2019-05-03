@@ -39,7 +39,7 @@ public class RelationsEditor : EditorWindow
 
         GUILayout.Space(10);
 
-        if (GUILayout.Button("CreateRelation") && objParent != null)
+        if (GUILayout.Button("CreateRelation") && objParent != null && objToAdd != null)
         {
             AddObject(objToAdd, buffer.objectList);
             objToAdd = null;
@@ -47,7 +47,7 @@ public class RelationsEditor : EditorWindow
 
         GUILayout.Space(10);
 
-        if (GUILayout.Button("Finish") && objParent != null)
+        if (GUILayout.Button("Finish") && objParent != null && buffer.objectList.Count >= 0)
         {
             AddObject(objParent, objScp.objectList);
 

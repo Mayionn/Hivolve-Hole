@@ -5,16 +5,29 @@ using UnityEngine.UI;
 
 public class ChangeSprite : MonoBehaviour
 {
-    public Sprite sp;
+    public Sprite spOn;
+    public Sprite spOff;
 
     Image im;
+    public GameScriptableObject obj;
+
+    void Start()
+    {
+        im = this.GetComponent<Image>();
+        SpriteChange();
+    }
+
+    void OnEnable()
+    {
+        Start();
+    }
 
     public void SpriteChange()
     {
-        im = this.GetComponent<Image>();
-
-        var tmp = sp;
-        sp = im.sprite;
-        im.sprite = tmp;
+        if (obj.muted) //change to mute.
+        {
+            im.sprite = spOn;
+        }
+        else im.sprite = spOff;
     }
 }

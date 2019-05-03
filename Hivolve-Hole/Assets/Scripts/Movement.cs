@@ -18,6 +18,9 @@ public class Movement : MonoBehaviour
         joystickPosition = new Vector2(
             Screen.width / 2, Screen.height / 8
         );
+
+        Physics.autoSimulation = true;
+        gm.paused = false;
     }
 
     // Update is called once per frame

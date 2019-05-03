@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class QuestManager : MonoBehaviour
+public partial class QuestManager : MonoBehaviour
 {
     [Header("Variables")]
     public float MinDif;
     public float MaxDif;
+    public float circleRadius;
     public int QuestsCompleted, QuestsFailed;
     [Space(10)]
     public ObjectScriptableObject objScp;
@@ -215,7 +216,8 @@ public class QuestManager : MonoBehaviour
     void NewQuest()
     {
         currentQuest = GenerateQuest();
-        //Debug.Log(currentQuest.questText);
+        SpawnObjectsPerQuest();
+        Debug.Log(currentQuest.questText);
     }
 
     // Update is called once per frame
@@ -225,10 +227,11 @@ public class QuestManager : MonoBehaviour
         {
             currentQuest.completed = 1;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.Q))
         {
             currentQuest.completed = -1;
         }
+
         switch (currentQuest.completed)
         {
             case 0:

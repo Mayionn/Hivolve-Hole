@@ -298,6 +298,7 @@ MonoBehaviour:
   cam: {fileID: 11400000, guid: 12c3b69485fbe084f87d25af95081b5c, type: 2}
   parent: {fileID: 4550474044379936874}
   cylinder: {fileID: 4550474044217108281}
+  gm: {fileID: 11400000, guid: 28d62f87283d0da47846e0854374f32d, type: 2}
 --- !u!1 &4550474045211378405
 GameObject:
   m_ObjectHideFlags: 0

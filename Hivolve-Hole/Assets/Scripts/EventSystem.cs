@@ -5,20 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class EventSystem : MonoBehaviour
 {
-    AudioListener a;
+    AudioListener audioSource;
 
     public GameScriptableObject gm;
     public GameObject PauseObj;
     public GameObject midGameObj;
+    public GameObject endGameObj;
 
     void Start()
     {
-        a = this.GetComponent<AudioListener>();
+        audioSource = this.GetComponent<AudioListener>();
+        gm.finished = false;
+    }
+
+    void Update()
+    {
+        if (gm.finished)
+        {
+            endGameObj.SetActive(true);
+            PauseObj.SetActive(false);
+            midGameObj.SetActive(false);
+        }
     }
 
     public void ToggleAudio()
     {
-        a.enabled = !a.enabled;
+        audioSource.enabled = !audioSource.enabled;
+        gm.muted = !gm.muted;
     }
 
     public void LoadEndless()

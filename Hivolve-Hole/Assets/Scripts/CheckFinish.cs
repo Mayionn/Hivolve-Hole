@@ -9,10 +9,10 @@ public class CheckFinish : MonoBehaviour
 
     void Start()
     {
-        gm.levelGameObjects = new List<GameObject>();
+        gm.levelGameObjects = new List<Transform>();
         for (int i = 0; i < transform.childCount; i++)
         {
-            gm.levelGameObjects.Add(transform.GetChild(i).gameObject);
+            gm.levelGameObjects.Add(transform.GetChild(i));
         }
     }
 
