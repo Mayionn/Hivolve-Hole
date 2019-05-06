@@ -12,6 +12,7 @@ TagManager:
   - Button/Endless
   - Button/Normal
   - Object/Normal
+  - Object/Water
   layers:
   - Default
   - TransparentFX

@@ -34,6 +34,9 @@ public static class PowerupSystem
     {
         switch (index)
         {
+            case 0:
+                currentPowerup = Powerups.None;
+                break;
             case 1:
                 currentPowerup = Powerups.Fire;
                 break;

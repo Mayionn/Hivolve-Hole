@@ -63,11 +63,11 @@ public partial class QuestManager : MonoBehaviour
             switch (type)
             {
                 case 0: //Eat X, can't eat Y
-                    if (currentEaten.y > numberCondition.y)
+                    if (currentEaten.y >= numberCondition.y)
                     {
                         completed = -1;
                     }
-                    else if (currentEaten.x > numberCondition.x)
+                    else if (currentEaten.x >= numberCondition.x)
                     {
                         completed = 1;
                     }
@@ -77,13 +77,13 @@ public partial class QuestManager : MonoBehaviour
                     {
                         completed = -1;
                     }
-                    else if (currentEaten.x > numberCondition.x)
+                    else if (currentEaten.x >= numberCondition.x)
                     {
                         completed = 1;
                     }
                     break;
                 case 2: //Don't Eat X for 1 min
-                    if (timePassed - timeTotal < 0 && currentEaten.x < numberCondition.x)
+                    if (timePassed - timeTotal <= 0 && currentEaten.x <= numberCondition.x)
                     {
                         completed = 1;
                     }
@@ -210,12 +210,17 @@ public partial class QuestManager : MonoBehaviour
     void Start()
     {
         FillObjects();
-        currentQuest = GenerateQuest();
+        NewQuest();
     }
 
     void NewQuest()
     {
         currentQuest = GenerateQuest();
+        if (currentQuest.type == 1)
+        {
+            PowerupSystem.ChoosePowerup(1);
+        }
+        DestroyChild();
         SpawnObjectsPerQuest();
         Debug.Log(currentQuest.questText);
     }
@@ -223,14 +228,17 @@ public partial class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /* if (Input.GetKeyDown(KeyCode.Space))
         {
             currentQuest.completed = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Q))
         {
             currentQuest.completed = -1;
-        }
+        }*/
+
+        UpdateQuestNumbers();
+        currentQuest.IsCompleted();
 
         switch (currentQuest.completed)
         {

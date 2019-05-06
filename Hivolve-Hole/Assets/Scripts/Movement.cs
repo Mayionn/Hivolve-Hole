@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     Vector2 joystickPosition;
     Vector3 mvmntVector;
 
+    public Transform topLeftConstrain;
+    public Transform bottomRightConstrain;
     void Start()
     {
         joystickPosition = new Vector2(
@@ -50,12 +52,38 @@ public class Movement : MonoBehaviour
                 }
 
                 this.transform.position += (mvmntVector * Speed) * Time.deltaTime;
+                InsideConstraints();
             }
-            transform.position += new Vector3(Speed, 0, 0) * Input.GetAxis("Horizontal") * Time.deltaTime;
-            transform.position += new Vector3(0, 0, Speed) * Input.GetAxis("Vertical") * Time.deltaTime;
+            else
+            {
+                mvmntVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Speed * Time.deltaTime;
+                transform.position += mvmntVector;
+                InsideConstraints();
+            }
+        }
+    }
+
+    void InsideConstraints()
+    {
+        Vector3 np = this.transform.position;
+        if (np.x < topLeftConstrain.position.x)
+        {
+            np.x = topLeftConstrain.position.x;
+        }
+        else if (np.x > bottomRightConstrain.position.x)
+        {
+            np.x = bottomRightConstrain.position.x;
         }
 
+        if (np.z > topLeftConstrain.position.z)
+        {
+            np.z = topLeftConstrain.position.z;
+        }
+        else if (np.z < bottomRightConstrain.position.z)
+        {
+            np.z = bottomRightConstrain.position.z;
+        }
 
-
+        this.transform.position = np;
     }
 }

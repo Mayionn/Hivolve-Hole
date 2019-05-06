@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3642818867651582829}
   - component: {fileID: 1929161193}
   - component: {fileID: 1929161192}
+  - component: {fileID: 595545444468677199}
   m_Layer: 0
   m_Name: Water Bottle
   m_TagString: Untagged
@@ -107,3 +108,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765dbb16cfc75374e933c54181256b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &595545444468677199
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929161191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: f4cb62a754d8a534bb4598e0806b069c, type: 3}

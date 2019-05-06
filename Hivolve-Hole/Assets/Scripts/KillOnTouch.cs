@@ -12,6 +12,8 @@ public class KillOnTouch : MonoBehaviour
     private Vector3 targetScale;
     private Vector3 currentScale;
 
+    public bool isEndless;
+
     public GameScriptableObject gm;
 
     public void Start()
@@ -43,20 +45,26 @@ public class KillOnTouch : MonoBehaviour
             int tmp = ObjectSystem.IsObjectHittable(other.gameObject.tag);
             if (tmp != -1)
             {
-                if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+                if (!isEndless)
                 {
-                    targetScale += new Vector3(other.attachedRigidbody.mass * 2, 0f, other.attachedRigidbody.mass * 2);
+
+                    if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+                    {
+                        targetScale += new Vector3(other.attachedRigidbody.mass * 2, 0f, other.attachedRigidbody.mass * 2);
+                    }
+                    else
+                        targetScale += new Vector3(other.attachedRigidbody.mass, 0f, other.attachedRigidbody.mass);
+
+                    cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
+
+                    cam.newTargetVector();
+                    gm.levelGameObjects.Remove(other.gameObject.transform); //!BUG HERE
+
                 }
-                else
-                    targetScale += new Vector3(other.attachedRigidbody.mass, 0f, other.attachedRigidbody.mass);
 
-                gm.levelGameObjects.Remove(other.gameObject.transform); //!BUG HERE
                 Destroy(other.gameObject);
-
                 PowerupSystem.ChoosePowerup(tmp);
-                cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
 
-                cam.newTargetVector();
             }
         }
     }

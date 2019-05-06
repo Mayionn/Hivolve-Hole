@@ -6,7 +6,6 @@ public class CameraFollow : MonoBehaviour
 {
     public CameraSystem cam;
     public GameObject targetObj;
-
     void Start()
     {
         cam.targetVector = cam.startVector;

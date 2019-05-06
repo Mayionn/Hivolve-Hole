@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea9769f7c3144f478f1b5f87a017ebb, type: 3}
   m_Name: CameraMenu
   m_EditorClassIdentifier: 
-  targetVector: {x: 0, y: 5, z: -10}
-  startVector: {x: 0, y: 5, z: -12}
-  i: 1
+  targetVector: {x: 0, y: 8, z: -12}
+  startVector: {x: 0, y: 8, z: -12}
