@@ -26,8 +26,8 @@ public class ChangeSprite : MonoBehaviour
     {
         if (obj.muted) //change to mute.
         {
-            im.sprite = spOn;
+            im.sprite = spOff;
         }
-        else im.sprite = spOff;
+        else im.sprite = spOn;
     }
 }

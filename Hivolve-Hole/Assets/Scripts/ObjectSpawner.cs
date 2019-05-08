@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public partial class QuestManager
 {
     public GameObject player;
+
+    public GameObject text;
 
     public GameObject goodCondition, badCondition;
 
@@ -33,6 +36,24 @@ public partial class QuestManager
         }
     }
 
+    void UpdateText()
+    {
+        switch (currentQuest.type)
+        {
+            case 0:
+                currentQuest.questText = $"Eat {currentQuest.numberCondition.x} {objScp.objectList[(int)currentQuest.objects.x].name} \nDon't Eat {currentQuest.numberCondition.y} {objScp.objectList[(int)currentQuest.objects.y].name}";
+                break;
+            case 1:
+                currentQuest.questText = $"Burn {currentQuest.numberCondition.x} {objScp.objectList[(int)currentQuest.objects.x].name} \nCan't stop burning";
+                break;
+            case 2:
+                currentQuest.questText = $"Eat {currentQuest.numberCondition.x} {objScp.objectList[(int)currentQuest.objects.x].name} in {currentQuest.numberCondition.y} seconds";
+                break;
+        }
+
+        text.GetComponent<TextMeshProUGUI>().SetText($"Quest: \n{currentQuest.questText}");
+    }
+
     void UpdateQuestNumbers()
     {
         switch (currentQuest.type)
@@ -43,11 +64,14 @@ public partial class QuestManager
                 break;
             case 1:
                 currentQuest.currentEaten.x = currentQuest.numberCondition.x - goodCondition.transform.childCount;
-                currentQuest.currentEaten.y += Time.deltaTime;
+                if (PowerupSystem.GetCurrentPowerup() == PowerupSystem.Powerups.None)
+                {
+                    currentQuest.currentEaten.y = -1;
+                }
                 break;
             case 2:
                 currentQuest.currentEaten.x = currentQuest.numberCondition.x - goodCondition.transform.childCount;
-                currentQuest.timePassed = Time.deltaTime;
+                currentQuest.timePassed += Time.deltaTime;
                 break;
         }
 

@@ -9,5 +9,7 @@ public class GameScriptableObject : ScriptableObject
     public bool finished;
     public bool muted;
 
+    public int lastLevelCompleted;
+
     public List<Transform> levelGameObjects;
 }

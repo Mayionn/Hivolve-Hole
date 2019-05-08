@@ -6,6 +6,7 @@ public class CheckFinish : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameScriptableObject gm;
+    public int levelIndex;
 
     void Start()
     {
@@ -22,6 +23,8 @@ public class CheckFinish : MonoBehaviour
         if (gm.levelGameObjects.Count == 0)
         {
             gm.finished = true;
+            if (levelIndex > gm.lastLevelCompleted)
+                gm.lastLevelCompleted = levelIndex;
         }
     }
 }

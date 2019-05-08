@@ -14,9 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paused: 0
   finished: 0
-  muted: 1
-  levelGameObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  muted: 0
+  lastLevelCompleted: 0
+  levelGameObjects: []
