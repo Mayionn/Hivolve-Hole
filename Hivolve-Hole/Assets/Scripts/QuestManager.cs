@@ -73,7 +73,7 @@ public partial class QuestManager : MonoBehaviour
                     }
                     break;
                 case 1: //Burn Down X Objects. If you stop burning you lose.
-                    if (numberCondition.y == -1)
+                    if (currentEaten.y == -1)
                     {
                         completed = -1;
                     }
@@ -133,7 +133,7 @@ public partial class QuestManager : MonoBehaviour
 
     int ChooseQuestType()
     {
-        return Random.Range(0, 2);
+        return Random.Range(0, 3);
     }
 
     Vector2 CalculateConditionNumber(int questType)
@@ -198,7 +198,7 @@ public partial class QuestManager : MonoBehaviour
             case 2:
                 objectsIndex = Random2RelatedObjects();
                 conditions = CalculateConditionNumber(type);
-                questText = $"Don't eat {conditions.x} {objScp.objectList[(int)objectsIndex.x].name} for {conditions.y} seconds";
+                questText = $"Eat {conditions.x} {objScp.objectList[(int)objectsIndex.x].name} in {conditions.y} seconds";
                 quest = new Quest(objectsIndex, type, questText, conditions);
                 break;
         }
@@ -238,6 +238,7 @@ public partial class QuestManager : MonoBehaviour
         }*/
 
         UpdateQuestNumbers();
+        UpdateText();
         currentQuest.IsCompleted();
 
         switch (currentQuest.completed)
