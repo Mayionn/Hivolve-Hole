@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 34907474}
   m_Layer: 9
   m_Name: Cylinder001 (6)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,7 +426,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34907472}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -476,7 +476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 87c637c5d854f7147a80bb4539b2f13b, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 87c637c5d854f7147a80bb4539b2f13b, type: 3}
       propertyPath: m_Layer
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 95228521}
   m_Layer: 9
   m_Name: GeoSphere015 (2)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,7 +616,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95228519}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 100956678}
   m_Layer: 9
   m_Name: Cylinder004 (3)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -725,7 +725,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100956676}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 111758047}
   m_Layer: 9
   m_Name: Cylinder004 (1)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -834,7 +834,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111758045}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -871,6 +871,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111758045}
   m_Mesh: {fileID: 4300006, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+--- !u!1 &130544725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 59367b8222a4aa04497e66af5b7be830,
+    type: 3}
+  m_PrefabInstance: {fileID: 1899878801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &130544728
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130544725}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &130544729
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130544725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 59367b8222a4aa04497e66af5b7be830, type: 3}
 --- !u!1001 &133998505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -885,6 +921,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 23c8cc2007d189e4d94ff1dd64560ed3, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 23c8cc2007d189e4d94ff1dd64560ed3, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 23c8cc2007d189e4d94ff1dd64560ed3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -963,7 +1003,7 @@ GameObject:
   - component: {fileID: 138592920}
   m_Layer: 9
   m_Name: Cylinder001 (7)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1020,7 +1060,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138592918}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1072,17 +1112,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Object/Normal
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
       propertyPath: m_TagString
       value: Object/Normal
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
       propertyPath: m_TagString
       value: Object/Normal
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
       propertyPath: m_TagString
       value: Object/Normal
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 132f1d6e9e4245840a38250f0b773ae1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1379,7 +1435,7 @@ GameObject:
   - component: {fileID: 283900180}
   m_Layer: 9
   m_Name: GeoSphere015 (6)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1436,7 +1492,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283900178}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1524,7 +1580,7 @@ GameObject:
   - component: {fileID: 313645688}
   m_Layer: 9
   m_Name: GeoSphere012 (2)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1581,7 +1637,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313645686}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1728,6 +1784,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a89314ec97eda394abacbffc687099a9, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: a89314ec97eda394abacbffc687099a9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1857,6 +1917,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1865,9 +1929,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1941,6 +2013,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0939831
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a69f9c12949340f4b9d3ae1141c33eaa, type: 3}
 --- !u!1 &386945572 stripped
@@ -1962,7 +2046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 868daaaefbc30624f89c56429b051f4d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 868daaaefbc30624f89c56429b051f4d, type: 3}
       propertyPath: m_Layer
@@ -2023,6 +2107,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 868daaaefbc30624f89c56429b051f4d, type: 3}
       propertyPath: m_LocalScale.z
       value: 16.834
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 868daaaefbc30624f89c56429b051f4d, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 868daaaefbc30624f89c56429b051f4d, type: 3}
@@ -2155,7 +2243,7 @@ GameObject:
   - component: {fileID: 409444914}
   m_Layer: 9
   m_Name: Cylinder001 (3)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2212,7 +2300,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409444912}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2270,7 +2358,7 @@ GameObject:
   - component: {fileID: 437513607}
   m_Layer: 9
   m_Name: Cylinder004 (2)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2327,7 +2415,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437513605}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2451,7 +2539,7 @@ GameObject:
   - component: {fileID: 554775112}
   m_Layer: 9
   m_Name: Cylinder001 (1)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2508,7 +2596,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554775110}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2632,7 +2720,7 @@ GameObject:
   - component: {fileID: 606617503}
   m_Layer: 9
   m_Name: GeoSphere012 (1)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2689,7 +2777,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606617501}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2740,6 +2828,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5fd648326e55be94faf09d89e7013419, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5fd648326e55be94faf09d89e7013419, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5fd648326e55be94faf09d89e7013419, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2860,7 +2952,7 @@ GameObject:
   - component: {fileID: 683712781}
   m_Layer: 9
   m_Name: GeoSphere015 (3)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2917,7 +3009,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683712779}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3005,7 +3097,7 @@ GameObject:
   - component: {fileID: 754819195}
   m_Layer: 9
   m_Name: Cylinder004 (5)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3062,7 +3154,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754819193}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3120,7 +3212,7 @@ GameObject:
   - component: {fileID: 805642667}
   m_Layer: 9
   m_Name: GeoSphere015 (4)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3177,7 +3269,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805642665}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3227,7 +3319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 930b59a89b9a92a48baa97671601b9dd, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 930b59a89b9a92a48baa97671601b9dd, type: 3}
       propertyPath: m_Layer
@@ -3499,9 +3591,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9aa81ce7cc6a02e4eb41501caf6caf69, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 9aa81ce7cc6a02e4eb41501caf6caf69, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 9aa81ce7cc6a02e4eb41501caf6caf69, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9aa81ce7cc6a02e4eb41501caf6caf69, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3559,6 +3659,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0924835
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 9aa81ce7cc6a02e4eb41501caf6caf69, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 9aa81ce7cc6a02e4eb41501caf6caf69, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aa81ce7cc6a02e4eb41501caf6caf69, type: 3}
 --- !u!1 &997159652
@@ -3576,7 +3684,7 @@ GameObject:
   - component: {fileID: 997159654}
   m_Layer: 9
   m_Name: GeoSphere013 (1)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3633,7 +3741,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997159652}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3685,7 +3793,7 @@ GameObject:
   - component: {fileID: 997587022}
   m_Layer: 9
   m_Name: Cylinder001 (2)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3742,7 +3850,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997587020}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3829,6 +3937,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 16e12e2365598fe46a487836d852974b, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 16e12e2365598fe46a487836d852974b, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 16e12e2365598fe46a487836d852974b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3941,7 +4053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
@@ -3949,7 +4061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
@@ -3957,7 +4069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
@@ -3969,7 +4081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
@@ -3977,7 +4089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
@@ -3985,7 +4097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
@@ -3993,7 +4105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
@@ -4001,11 +4113,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.72751
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.745213
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 11.930609
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 11.930609
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 11.930609
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4123,61 +4291,37 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16.72751
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 31.745213
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
+    - target: {fileID: 2300000, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
+    - target: {fileID: 2300002, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
+    - target: {fileID: 2300004, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 11.930609
+    - target: {fileID: 2300006, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 11.930609
+    - target: {fileID: 2300008, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 11.930609
+    - target: {fileID: 2300010, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300012, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300014, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45efc7374d5db7841af34d9e5688f03f, type: 3}
@@ -4304,7 +4448,7 @@ GameObject:
   - component: {fileID: 1117775828}
   m_Layer: 9
   m_Name: Cylinder001 (5)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4361,7 +4505,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117775826}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -4413,7 +4557,7 @@ GameObject:
   - component: {fileID: 1132725760}
   m_Layer: 9
   m_Name: Cylinder004 (4)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4470,7 +4614,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132725758}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -4628,7 +4772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3545c1b7f3f470847b34d9519fe1e875, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3545c1b7f3f470847b34d9519fe1e875, type: 3}
       propertyPath: m_Layer
@@ -4714,6 +4858,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: 7d2905b0ad554e7449f424606c206a0c, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 7d2905b0ad554e7449f424606c206a0c, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 7d2905b0ad554e7449f424606c206a0c, type: 3}
       propertyPath: m_IsActive
@@ -4811,6 +4959,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.7459722
       objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 7d2905b0ad554e7449f424606c206a0c, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d2905b0ad554e7449f424606c206a0c, type: 3}
 --- !u!1 &1159577623
@@ -4828,7 +4980,7 @@ GameObject:
   - component: {fileID: 1159577625}
   m_Layer: 9
   m_Name: Cylinder004 (6)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4885,7 +5037,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159577623}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -5409,6 +5561,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5416,54 +5572,6 @@ PrefabInstance:
     - target: {fileID: 100008, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
       propertyPath: m_Layer
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.9210725
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.026999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.7940357
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.42915452
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.42915452
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.42915452
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7067921
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.021093935
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.021093935
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7067921
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -3.4190001
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5520,6 +5628,58 @@ PrefabInstance:
     - target: {fileID: 400006, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
       propertyPath: m_LocalScale.z
       value: 5.8118725
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9210725
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.026999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.7940357
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42915452
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.42915452
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.42915452
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7067921
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.021093935
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.021093935
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7067921
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -3.4190001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22023704fea804f40843dd33225f6ad7, type: 3}
@@ -5580,6 +5740,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f4f3a6978d762634aa2e17579d6c0a48, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f4f3a6978d762634aa2e17579d6c0a48, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.8714905
@@ -5635,6 +5799,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f4f3a6978d762634aa2e17579d6c0a48, type: 3}
       propertyPath: m_LocalScale.z
       value: 2.0544367
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: f4f3a6978d762634aa2e17579d6c0a48, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4f3a6978d762634aa2e17579d6c0a48, type: 3}
@@ -5843,7 +6011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: fe8732b788939594ea03642ea47ae74a, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: fe8732b788939594ea03642ea47ae74a, type: 3}
       propertyPath: m_Layer
@@ -6017,6 +6185,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7b5664cee05060249aa0711c7ba18129, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7b5664cee05060249aa0711c7ba18129, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7b5664cee05060249aa0711c7ba18129, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6434,7 +6606,7 @@ GameObject:
   - component: {fileID: 1802221409}
   m_Layer: 9
   m_Name: GeoSphere015 (1)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6491,7 +6663,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802221407}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -6543,7 +6715,7 @@ GameObject:
   - component: {fileID: 1811315990}
   m_Layer: 9
   m_Name: GeoSphere015 (5)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6600,7 +6772,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811315988}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -6650,7 +6822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 930b59a89b9a92a48baa97671601b9dd, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 930b59a89b9a92a48baa97671601b9dd, type: 3}
       propertyPath: m_Layer
@@ -6733,7 +6905,7 @@ GameObject:
   - component: {fileID: 1863202940}
   m_Layer: 9
   m_Name: GeoSphere012 (3)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6790,7 +6962,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863202938}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -7034,6 +7206,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 59367b8222a4aa04497e66af5b7be830, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 59367b8222a4aa04497e66af5b7be830, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.42149
@@ -7089,6 +7265,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 59367b8222a4aa04497e66af5b7be830, type: 3}
       propertyPath: m_LocalScale.z
       value: 13.708023
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 59367b8222a4aa04497e66af5b7be830, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59367b8222a4aa04497e66af5b7be830, type: 3}
@@ -7176,7 +7356,7 @@ GameObject:
   - component: {fileID: 1938903192}
   m_Layer: 9
   m_Name: Cylinder001 (4)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7233,7 +7413,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938903190}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -7327,7 +7507,7 @@ GameObject:
   - component: {fileID: 2046456236}
   m_Layer: 9
   m_Name: Cylinder001 (9)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7384,7 +7564,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046456234}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -7435,6 +7615,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ce6211c756036e24aacf45452d7572df, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ce6211c756036e24aacf45452d7572df, type: 3}
+      propertyPath: m_TagString
+      value: Object/Normal
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ce6211c756036e24aacf45452d7572df, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7492,6 +7676,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.56418407
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ce6211c756036e24aacf45452d7572df, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce6211c756036e24aacf45452d7572df, type: 3}
 --- !u!4 &2063762397 stripped
@@ -7515,7 +7703,7 @@ GameObject:
   - component: {fileID: 2110946035}
   m_Layer: 9
   m_Name: Cylinder001 (8)
-  m_TagString: Untagged
+  m_TagString: Object/Normal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7572,7 +7760,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110946033}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
