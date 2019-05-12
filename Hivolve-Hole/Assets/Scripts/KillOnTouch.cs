@@ -9,6 +9,8 @@ public class KillOnTouch : MonoBehaviour
     public GameObject parent;
     public GameObject cylinder;
 
+    public float scale;
+
     private Vector3 targetScale;
     private Vector3 currentScale;
 
@@ -50,10 +52,10 @@ public class KillOnTouch : MonoBehaviour
 
                     if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
                     {
-                        targetScale += new Vector3(other.attachedRigidbody.mass * 2, 0f, other.attachedRigidbody.mass * 2);
+                        targetScale += new Vector3(scale * 2, 0f, scale * 2);
                     }
                     else
-                        targetScale += new Vector3(other.attachedRigidbody.mass, 0f, other.attachedRigidbody.mass);
+                        targetScale += new Vector3(scale, 0f, scale);
 
                     cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
 

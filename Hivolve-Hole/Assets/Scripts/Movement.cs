@@ -83,7 +83,6 @@ public class Movement : MonoBehaviour
         {
             np.z = bottomRightConstrain.position.z;
         }
-
         this.transform.position = np;
     }
 }
