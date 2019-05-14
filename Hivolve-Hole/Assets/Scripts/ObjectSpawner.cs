@@ -20,11 +20,19 @@ public partial class QuestManager
 
     void SpawnObjectsPerQuest()
     {
+
+        /* Vector3 scaleAjusted;
+
+         GameObject tmp = objScp.objectList[(int)currentQuest.objects.x];
+         Vector3 b = tmp.GetComponent<Renderer>().bounds.size;
+         GameObject tmp2 = objScp.objectList[(int)currentQuest.objects.y];
+         Vector3 d = tmp.GetComponent<Renderer>().bounds.size;*/
+
         for (int i = 0; i < currentQuest.numberCondition.x; i++)
         {
             var a = Instantiate(objScp.objectList[(int)currentQuest.objects.x], RandomPosition(), Quaternion.identity, goodCondition.transform);
             a.tag = "Object/Normal";
-            a.gameObject.transform.localScale = new Vector3(2, 2, 2);
+            a.gameObject.transform.localScale = new Vector3(1, 1, 1);
             a.layer = 9;
         }
         for (int i = 0; i < currentQuest.numberCondition.y; i++)
@@ -32,7 +40,7 @@ public partial class QuestManager
             var a = Instantiate(objScp.objectList[(int)currentQuest.objects.y], RandomPosition(), Quaternion.identity, badCondition.transform);
             a.layer = 9;
             a.tag = "Object/Normal";
-            a.gameObject.transform.localScale = new Vector3(2, 2, 2);
+            a.gameObject.transform.localScale = new Vector3(1, 1, 1); ;
         }
     }
 

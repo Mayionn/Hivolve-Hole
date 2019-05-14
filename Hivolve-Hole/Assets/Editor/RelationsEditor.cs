@@ -23,7 +23,7 @@ public class RelationsEditor : EditorWindow
 
     void OnGUI()
     {
-        objParent = (GameObject)EditorGUILayout.ObjectField("Object", objParent, typeof(GameObject), allowSceneObjects: true);
+        //objParent = (GameObject)EditorGUILayout.ObjectField("Object", objParent, typeof(GameObject), allowSceneObjects: true);
 
         GUILayout.Space(10);
 
@@ -39,7 +39,7 @@ public class RelationsEditor : EditorWindow
 
         GUILayout.Space(10);
 
-        if (GUILayout.Button("CreateRelation") && objParent != null && objToAdd != null)
+        if (GUILayout.Button("CreateRelation") && objToAdd != null)
         {
             AddObject(objToAdd, buffer.objectList);
             objToAdd = null;
@@ -47,19 +47,24 @@ public class RelationsEditor : EditorWindow
 
         GUILayout.Space(10);
 
-        if (GUILayout.Button("Finish") && objParent != null && buffer.objectList.Count >= 0)
+        if (GUILayout.Button("Finish"))
         {
-            AddObject(objParent, objScp.objectList);
+            //AddObject(objParent, objScp.objectList);
 
-            int i = ObjectExists(objParent, objScp.objectList);
+            //int i = ObjectExists(objParent, objScp.objectList);
             //Adicionar os objectos a lista total.
             foreach (var obj in buffer.objectList)
             {
                 AddObject(obj, objScp.objectList);
-                int j = ObjectExists(obj, objScp.objectList);
+            }
 
-                WriteRelations(i, j);
-                WriteRelations(j, i);
+            for (int i = 0; i < objScp.objectList.Count - 1; i++)
+            {
+                for (int j = i; j < objScp.objectList.Count; j++)
+                {
+                    WriteRelations(i, j);
+                    WriteRelations(j, i);
+                }
             }
             //Escrever para o ficheiro as relaçoes. AB e BA para cada objecto.
             ResetAll();

@@ -5,6 +5,12 @@ using UnityEngine;
 
 public partial class QuestManager : MonoBehaviour
 {
+    void OnEnable()
+    {
+        objScp.filePath = Application.streamingAssetsPath + "/Resources/relations.txt";
+    }
+
+
     [Header("Variables")]
     public float MinDif;
     public float MaxDif;
@@ -228,6 +234,8 @@ public partial class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(objScp.filePath);
+
         /* if (Input.GetKeyDown(KeyCode.Space))
         {
             currentQuest.completed = 1;
