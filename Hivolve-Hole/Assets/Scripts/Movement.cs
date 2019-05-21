@@ -17,6 +17,8 @@ public class Movement : MonoBehaviour
     public Transform bottomRightConstrain;
     void Start()
     {
+        PowerupSystem.ChangePowerup(PowerupSystem.Powerups.None);
+
         joystickPosition = new Vector2(
             Screen.width / 2, Screen.height / 8
         );

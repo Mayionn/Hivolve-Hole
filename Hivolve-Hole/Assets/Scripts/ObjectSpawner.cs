@@ -31,7 +31,12 @@ public partial class QuestManager
         for (int i = 0; i < currentQuest.numberCondition.x; i++)
         {
             var a = Instantiate(objScp.objectList[(int)currentQuest.objects.x], RandomPosition(), Quaternion.identity, goodCondition.transform);
-            a.tag = "Object/Normal";
+            if (currentQuest.type == 1)
+            {
+                a.tag = "Material/Wood";
+            }
+            else
+                a.tag = "Object/Normal";
             a.gameObject.transform.localScale = new Vector3(1, 1, 1);
             a.layer = 9;
         }
@@ -49,13 +54,13 @@ public partial class QuestManager
         switch (currentQuest.type)
         {
             case 0:
-                currentQuest.questText = $"Eat {currentQuest.numberCondition.x} {objScp.objectList[(int)currentQuest.objects.x].name} \nDon't Eat {currentQuest.numberCondition.y} {objScp.objectList[(int)currentQuest.objects.y].name}";
+                currentQuest.questText = $"Eat {currentQuest.numberCondition.x - currentQuest.currentEaten.x} {objScp.objectList[(int)currentQuest.objects.x].name} \nDon't Eat {currentQuest.numberCondition.y - currentQuest.currentEaten.y} {objScp.objectList[(int)currentQuest.objects.y].name}";
                 break;
             case 1:
-                currentQuest.questText = $"Burn {currentQuest.numberCondition.x} {objScp.objectList[(int)currentQuest.objects.x].name} \nCan't stop burning";
+                currentQuest.questText = $"Burn {currentQuest.numberCondition.x - currentQuest.currentEaten.x} {objScp.objectList[(int)currentQuest.objects.x].name} \nCan't stop burning";
                 break;
             case 2:
-                currentQuest.questText = $"Eat {currentQuest.numberCondition.x} {objScp.objectList[(int)currentQuest.objects.x].name} in {currentQuest.numberCondition.y} seconds";
+                currentQuest.questText = $"Eat {currentQuest.numberCondition.x - currentQuest.currentEaten.x} {objScp.objectList[(int)currentQuest.objects.x].name} in {currentQuest.timeTotal - currentQuest.timePassed} seconds";
                 break;
         }
 

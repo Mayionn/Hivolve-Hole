@@ -43,10 +43,10 @@ public static class PowerupSystem
             case 2:
                 currentPowerup = Powerups.Vortex;
                 break;
-            case 5:
+            case 3:
                 currentPowerup = Powerups.Magnet;
                 break;
-            case 3:
+            case 4:
                 currentPowerup = Powerups.DoubleSize;
                 break;
         }

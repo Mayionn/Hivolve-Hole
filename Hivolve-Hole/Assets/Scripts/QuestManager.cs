@@ -7,7 +7,7 @@ public partial class QuestManager : MonoBehaviour
 {
     void OnEnable()
     {
-        objScp.filePath = Application.streamingAssetsPath + "/Resources/relations.txt";
+        objScp.filePath = Application.persistentDataPath + "Resources/relations.txt";
     }
 
 
@@ -118,7 +118,12 @@ public partial class QuestManager : MonoBehaviour
     List<int> FillRelations(int i)
     {
         List<int> relations = new List<int>();
-        string[] lines = File.ReadAllLines(objScp.filePath);
+
+        TextAsset newFile = Resources.Load<TextAsset>("relations");
+
+        //string[] lines = File.ReadAllLines(objScp.filePath);
+
+        string[] lines = newFile.text.Split('\n');
 
         string[] numbers = lines[i].Split(',');
         for (int x = 0; x < numbers.Length; x++)
@@ -234,7 +239,7 @@ public partial class QuestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(objScp.filePath);
+        //Debug.Log(objScp.filePath);
 
         /* if (Input.GetKeyDown(KeyCode.Space))
         {

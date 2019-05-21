@@ -16,9 +16,10 @@ public static class ObjectSystem
     ? 0 is AllObjects
     ? 1 is Fire - Cause
     ? 2 is Vortex - Cause
-    ? 3 is WoodMaterial
-    ? 4 is MetalMaterial
-    ? 5 is Metal - Cause
+    ? 3 is Magnet - Cause
+    ? 4 is Double - Cause
+    ? 5 is WoodMaterial
+    ? 6 is MetalMaterial
     */
 
     public static int IsObjectHittable(string tag)

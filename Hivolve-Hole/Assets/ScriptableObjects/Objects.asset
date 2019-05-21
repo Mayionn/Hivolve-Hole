@@ -12,6 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd96ff4a403eb404ea3940763c7d7e6f, type: 3}
   m_Name: Objects
   m_EditorClassIdentifier: 
-  paused: 0
   filePath: Assets\Resources\relations.txt
-  objectList: []
+  objectList:
+  - {fileID: 2834467270236350999, guid: 309a7a1bd6fd0a24aa3f9e80dd561834, type: 3}
+  - {fileID: 7540692034757420163, guid: d936c3b806abb8b459c875601cd3967c, type: 3}
+  - {fileID: 1168225521852380702, guid: e94d4ce409fe4074798d3e8a154bcb29, type: 3}
+  - {fileID: 7430272349170580165, guid: 801cc8cf4ba31fb4485beebc73eeb735, type: 3}
+  - {fileID: 7856729580307579410, guid: 7f328b1636e6e454cbe6cd5aadac7d72, type: 3}
+  - {fileID: 668352739619812198, guid: cad63aa116660e246947d35f1dab8422, type: 3}
+  - {fileID: 8749170086170647440, guid: 3d521059b88b138438afe621fc358124, type: 3}
+  - {fileID: 1715461880949010776, guid: e8deba4b377e6e54188eabd1f847a94d, type: 3}
+  - {fileID: 6777242795229914352, guid: cfbb84dd1d13e3745afd0f5c2098954a, type: 3}
+  - {fileID: 8915037703108933485, guid: a144866fd86fd774db1e512f8a749aa7, type: 3}
+  - {fileID: 146469646639255038, guid: 5518b1cb1221c6943bdedd7260a89772, type: 3}
+  - {fileID: 4400033887241586120, guid: a2500df4e622e014f89c9e75a82d80b4, type: 3}
+  - {fileID: 8313771477051588101, guid: fd43ee04533c57742891d9073859f619, type: 3}
+  - {fileID: 5119005955465922598, guid: 3c7b73c8f09933b4082fdd5a12d620c9, type: 3}
+  - {fileID: 644370505517302569, guid: 95a190178f8410442a38dd6918af22aa, type: 3}

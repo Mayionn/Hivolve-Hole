@@ -15,16 +15,14 @@ public class FireBurn : MonoBehaviour
     void OnTriggerStay(Collider col)
     {
         int tmp = ObjectSystem.IsObjectHittable(col.gameObject.tag);
-        if (tmp == 4)
+        if (tmp == 5)
         {
-            Destroy(col.gameObject);
-
             for (int i = 0; i < ashCount; i++)
             {
                 Vector3 pos = col.transform.position + new Vector3(1, 1, 1) * Random.Range(0.5f, 0.9f);
-                Instantiate(ashParent, pos, col.transform.rotation);
+                Instantiate(ashParent, pos, col.transform.rotation, col.transform.parent);
             }
-
+            Destroy(col.gameObject);
         }
     }
 
