@@ -49,18 +49,24 @@ public class KillOnTouch : MonoBehaviour
             {
                 if (!isEndless)
                 {
-
-                    if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+                    if (other.tag.Equals("Object/Popcorn"))
                     {
-                        targetScale += new Vector3(scale * 2, 0f, scale * 2);
+                        targetScale += new Vector3(0.01f, 0f, 0.01f);
                     }
                     else
-                        targetScale += new Vector3(scale, 0f, scale);
+                    {
+                        if (PowerupSystem.IsCurrentPowerup(PowerupSystem.Powerups.DoubleSize))
+                        {
+                            targetScale += new Vector3(scale * 2, 0f, scale * 2);
+                        }
+                        else
+                            targetScale += new Vector3(scale, 0f, scale);
 
-                    cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
+                        cylinder.transform.localScale += new Vector3(0, 0.5f, 0);
+                        cam.newTargetVector();
 
-                    cam.newTargetVector();
-                    gm.levelGameObjects.Remove(other.gameObject.transform); //!BUG HERE
+                    }
+                    gm.levelGameObjects.Remove(other.gameObject.transform); //!BUG HERE - not really a bug but wtv. It works fine
 
                 }
 

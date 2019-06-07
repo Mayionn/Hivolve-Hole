@@ -7,9 +7,10 @@ public static class ObjectSystem
     public static string ObjectTag = "Object";
 
     public static string[] ObjectTagList = {
-        "Object/Normal", "Object/Fire", "Object/Vortex", "Object/Metal", "Object/Water",
-        "Material/Wood", "Material/Metal",
-        "Button/Endless", "Button/Normal"
+        "Object/Remove", "Object/Fire", "Object/Vortex", "Object/Metal", "Object/Water",
+        "Material/Wood", "Material/Metal", "Material/Vortex",
+        "Button/Endless", "Button/Normal",
+        "Object/Popcorn"
     };
 
     /*
@@ -20,6 +21,7 @@ public static class ObjectSystem
     ? 4 is Double - Cause
     ? 5 is WoodMaterial
     ? 6 is MetalMaterial
+    ? 7 is VortexMaterial
     */
 
     public static int IsObjectHittable(string tag)

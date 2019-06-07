@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 172245283}
   m_Layer: 9
   m_Name: GeoSphere005 (1)
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +222,7 @@ Transform:
   m_LocalScale: {x: 0.81135, y: 0.7940009, z: 0.70555043}
   m_Children: []
   m_Father: {fileID: 687357191}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &172245281
 MeshRenderer:
@@ -414,7 +414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5379975e1a3f9e4409beb04c895ac4ff, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5379975e1a3f9e4409beb04c895ac4ff, type: 3}
       propertyPath: m_Layer
@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 970fab8b3f627e0419b7067063a2316a, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 970fab8b3f627e0419b7067063a2316a, type: 3}
       propertyPath: m_Layer
@@ -537,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 970fab8b3f627e0419b7067063a2316a, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 970fab8b3f627e0419b7067063a2316a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -609,6 +609,7 @@ Transform:
   m_LocalPosition: {x: 0.05788383, y: 2.0414782, z: 14.016278}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1630657964}
   - {fileID: 442803840}
   - {fileID: 1220093183}
   - {fileID: 1220093181}
@@ -619,7 +620,6 @@ Transform:
   - {fileID: 1972205082}
   - {fileID: 1260466462}
   - {fileID: 492259488}
-  - {fileID: 1630657964}
   - {fileID: 184119444}
   - {fileID: 14443450}
   - {fileID: 149141474}
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 836034380}
   m_Layer: 9
   m_Name: ChamferCyl006 (1)
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1028,7 +1028,7 @@ GameObject:
   - component: {fileID: 373558587}
   m_Layer: 9
   m_Name: Pepperoni2
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1048,7 +1048,7 @@ GameObject:
   - component: {fileID: 1084883804}
   m_Layer: 9
   m_Name: Pizza1
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,7 +1068,7 @@ GameObject:
   - component: {fileID: 1262062044}
   m_Layer: 9
   m_Name: Pepperoni3
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1195,7 +1195,7 @@ PrefabInstance:
     - target: {fileID: 4550474045127140467, guid: 0bdf3b1eec9e176438b9da7ce04cbae6,
         type: 3}
       propertyPath: scale
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bdf3b1eec9e176438b9da7ce04cbae6, type: 3}
@@ -1254,7 +1254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6c2ecb3d5aeca54e934730c83aafa52, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a6c2ecb3d5aeca54e934730c83aafa52, type: 3}
       propertyPath: m_Layer
@@ -1586,7 +1586,7 @@ Transform:
   m_LocalScale: {x: 0.37610817, y: 0.3680648, z: 0.32706484}
   m_Children: []
   m_Father: {fileID: 687357191}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1220093179
 Transform:
@@ -1600,7 +1600,7 @@ Transform:
   m_LocalScale: {x: 0.81135064, y: 0.79399943, z: 0.705553}
   m_Children: []
   m_Father: {fileID: 687357191}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1220093181
 Transform:
@@ -1614,7 +1614,7 @@ Transform:
   m_LocalScale: {x: 0.5247045, y: 0.51348335, z: 0.45628473}
   m_Children: []
   m_Father: {fileID: 687357191}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1220093183
 Transform:
@@ -1628,7 +1628,7 @@ Transform:
   m_LocalScale: {x: 1.2197367, y: 1.1936517, z: 1.060687}
   m_Children: []
   m_Father: {fileID: 687357191}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220458713
 GameObject:
@@ -1645,7 +1645,7 @@ GameObject:
   - component: {fileID: 799941994}
   m_Layer: 9
   m_Name: GeoSphere006
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1665,7 +1665,7 @@ GameObject:
   - component: {fileID: 2001824629}
   m_Layer: 9
   m_Name: GeoSphere005
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1685,7 +1685,7 @@ GameObject:
   - component: {fileID: 115044106}
   m_Layer: 9
   m_Name: GeoSphere004
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1705,7 +1705,7 @@ GameObject:
   - component: {fileID: 2011999050}
   m_Layer: 9
   m_Name: GeoSphere002
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1723,7 +1723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_Layer
@@ -1759,7 +1759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2019,7 +2019,7 @@ GameObject:
   - component: {fileID: 296234761}
   m_Layer: 9
   m_Name: Box006
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2039,7 +2039,7 @@ GameObject:
   - component: {fileID: 1522672272}
   m_Layer: 9
   m_Name: Box009
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2059,7 +2059,7 @@ GameObject:
   - component: {fileID: 2135676005}
   m_Layer: 9
   m_Name: ChamferCyl006
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2079,7 +2079,7 @@ GameObject:
   - component: {fileID: 1355528642}
   m_Layer: 9
   m_Name: GeoSphere004 (1)
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2096,7 +2096,7 @@ Transform:
   m_LocalScale: {x: 0.5247, y: 0.5134805, z: 0.45628047}
   m_Children: []
   m_Father: {fileID: 687357191}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1355528640
 MeshRenderer:
@@ -2350,7 +2350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c58b1f2391d5af942a532544b140c382, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c58b1f2391d5af942a532544b140c382, type: 3}
       propertyPath: m_Layer
@@ -2436,26 +2436,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Constrains
       objectReference: {fileID: 0}
-    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -16.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 53.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332167588404345985, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 68.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332167588404345985, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3332167587833564120, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2520,6 +2500,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -85.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332167588404345985, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 68.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332167588404345985, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 53.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56f2c9cfef751bf4986387dd1ac25d3f, type: 3}
@@ -2619,7 +2619,7 @@ GameObject:
   - component: {fileID: 1972205085}
   m_Layer: 9
   m_Name: GeoSphere006 (1)
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2636,7 +2636,7 @@ Transform:
   m_LocalScale: {x: 0.37611, y: 0.36806023, z: 0.32706022}
   m_Children: []
   m_Father: {fileID: 687357191}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1972205083
 MeshRenderer:
@@ -2815,6 +2815,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Telem\xF3vel"
       objectReference: {fileID: 0}
+    - target: {fileID: 729713178295888290, guid: c8b12745502539b4e8fb96c3e2dd877d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 729713178295465346, guid: c8b12745502539b4e8fb96c3e2dd877d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2884,6 +2889,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Copo para L\xE1pis 2"
       objectReference: {fileID: 0}
+    - target: {fileID: 2286493211562138182, guid: a79a3a4aab141054887431bfb6595454,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 2286493211562559078, guid: a79a3a4aab141054887431bfb6595454,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2922,7 +2932,7 @@ PrefabInstance:
     - target: {fileID: 2286493211562559078, guid: a79a3a4aab141054887431bfb6595454,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2286493211562559078, guid: a79a3a4aab141054887431bfb6595454,
         type: 3}
@@ -2952,6 +2962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flauta
+      objectReference: {fileID: 0}
+    - target: {fileID: 3474471665579697678, guid: d1e4da29c32344440862ce8c743c1871,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 3474471665579997742, guid: d1e4da29c32344440862ce8c743c1871,
         type: 3}
@@ -3021,6 +3036,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Suitcase
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212550670133394170, guid: 5b35898be33dc164a995554c5df261e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 7212550670133094106, guid: 5b35898be33dc164a995554c5df261e1,
         type: 3}
@@ -3129,7 +3149,7 @@ PrefabInstance:
     - target: {fileID: 7856729580307881522, guid: 7f328b1636e6e454cbe6cd5aadac7d72,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7856729580307881522, guid: 7f328b1636e6e454cbe6cd5aadac7d72,
         type: 3}

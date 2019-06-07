@@ -49,6 +49,8 @@ public static class PowerupSystem
             case 4:
                 currentPowerup = Powerups.DoubleSize;
                 break;
+            default:
+                break;
         }
     }
 }

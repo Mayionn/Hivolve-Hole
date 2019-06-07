@@ -411,7 +411,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1300,8 +1300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af91e9f78478e0b488c460e738fe7ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spOn: {fileID: 21300000, guid: de91bd7fa90e8d9478c7700b256d8452, type: 3}
-  spOff: {fileID: 21300000, guid: 14bb444df5dcd554b85e855d51688d73, type: 3}
+  spOn: {fileID: 21300000, guid: fa6460b6b3e233749a7ae61ff05513a7, type: 3}
+  spOff: {fileID: 21300000, guid: 398e42c4cbe22f0428146cc82115f549, type: 3}
   obj: {fileID: 11400000, guid: 28d62f87283d0da47846e0854374f32d, type: 2}
 --- !u!1 &5979738024999244557
 GameObject:

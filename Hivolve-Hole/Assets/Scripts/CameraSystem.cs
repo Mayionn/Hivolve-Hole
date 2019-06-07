@@ -10,7 +10,7 @@ public class CameraSystem : ScriptableObject
     public void newTargetVector()
     {
         var tmp = targetVector;
-        targetVector += startVector / 6;
+        targetVector += startVector / 12;
 
         if (targetVector.magnitude > maxVector.magnitude)
         {

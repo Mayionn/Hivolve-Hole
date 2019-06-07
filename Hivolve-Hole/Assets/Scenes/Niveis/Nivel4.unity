@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -489,7 +489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1f2460d22828ff943b38f0e41a1fd563, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f2460d22828ff943b38f0e41a1fd563, type: 3}
       propertyPath: m_LocalPosition.x
@@ -702,7 +702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f7ed89833782be84ebf199d98e09d4bf, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f7ed89833782be84ebf199d98e09d4bf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1021,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a24590fcfba4e4c48a181167017f25cf, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a24590fcfba4e4c48a181167017f25cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 1502924300}
   m_Layer: 9
   m_Name: Box018
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1144,7 +1144,7 @@ GameObject:
   - component: {fileID: 1682485654}
   m_Layer: 9
   m_Name: Box019
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1604,7 +1604,7 @@ GameObject:
   - component: {fileID: 1320430355}
   m_Layer: 9
   m_Name: Pepperoni005
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +1624,7 @@ GameObject:
   - component: {fileID: 599904761}
   m_Layer: 9
   m_Name: Box018
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1644,7 +1644,7 @@ GameObject:
   - component: {fileID: 1441330825}
   m_Layer: 9
   m_Name: Pepperoni007
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1664,7 +1664,7 @@ GameObject:
   - component: {fileID: 1796192223}
   m_Layer: 9
   m_Name: Pepperoni006
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1684,7 +1684,7 @@ GameObject:
   - component: {fileID: 1178797125}
   m_Layer: 9
   m_Name: Pepperoni009
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1704,7 +1704,7 @@ GameObject:
   - component: {fileID: 11504920}
   m_Layer: 9
   m_Name: Pepperoni008
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1724,7 +1724,7 @@ GameObject:
   - component: {fileID: 2136455423}
   m_Layer: 9
   m_Name: Pepperoni011
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1744,7 +1744,7 @@ GameObject:
   - component: {fileID: 124425380}
   m_Layer: 9
   m_Name: Pepperoni010
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1764,7 +1764,7 @@ GameObject:
   - component: {fileID: 172187453}
   m_Layer: 9
   m_Name: Pepperoni013
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1784,7 +1784,7 @@ GameObject:
   - component: {fileID: 581716369}
   m_Layer: 9
   m_Name: Pepperoni012
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 575453868}
   m_Layer: 9
   m_Name: Pepperoni2
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1824,7 +1824,7 @@ GameObject:
   - component: {fileID: 1357020717}
   m_Layer: 9
   m_Name: Pepperoni1
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1844,7 +1844,7 @@ GameObject:
   - component: {fileID: 1823134014}
   m_Layer: 9
   m_Name: Pepperoni4
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1864,7 +1864,7 @@ GameObject:
   - component: {fileID: 176974270}
   m_Layer: 9
   m_Name: Pepperoni3
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1884,7 +1884,7 @@ GameObject:
   - component: {fileID: 1495369776}
   m_Layer: 9
   m_Name: Pizza1
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1904,7 +1904,7 @@ GameObject:
   - component: {fileID: 2072417152}
   m_Layer: 9
   m_Name: Pizza2
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1924,7 +1924,7 @@ GameObject:
   - component: {fileID: 254319153}
   m_Layer: 9
   m_Name: Pizza10
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1944,7 +1944,7 @@ GameObject:
   - component: {fileID: 1182586952}
   m_Layer: 9
   m_Name: Pizza4
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1964,7 +1964,7 @@ GameObject:
   - component: {fileID: 526627462}
   m_Layer: 9
   m_Name: Pizza3
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1984,7 +1984,7 @@ GameObject:
   - component: {fileID: 154069629}
   m_Layer: 9
   m_Name: Pizza6
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2004,7 +2004,7 @@ GameObject:
   - component: {fileID: 884034442}
   m_Layer: 9
   m_Name: Pizza5
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2024,7 +2024,7 @@ GameObject:
   - component: {fileID: 26133821}
   m_Layer: 9
   m_Name: Pizza8
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2044,7 +2044,7 @@ GameObject:
   - component: {fileID: 1377016827}
   m_Layer: 9
   m_Name: Pizza7
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2064,7 +2064,7 @@ GameObject:
   - component: {fileID: 1195660015}
   m_Layer: 9
   m_Name: PizzaBox
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2084,7 +2084,7 @@ GameObject:
   - component: {fileID: 305097110}
   m_Layer: 9
   m_Name: Pizza9
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3229,7 +3229,7 @@ GameObject:
   - component: {fileID: 1387638685}
   m_Layer: 9
   m_Name: BeerBottle
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3249,7 +3249,7 @@ GameObject:
   - component: {fileID: 578318919}
   m_Layer: 9
   m_Name: WineBottle
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3389,7 +3389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c0498b7da355a584ca7c14fa6fc3f068, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0498b7da355a584ca7c14fa6fc3f068, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3548,7 +3548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 3acd0ee8bdcc2d14b8b746eff98619f4, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3acd0ee8bdcc2d14b8b746eff98619f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3740,7 +3740,7 @@ PrefabInstance:
     - target: {fileID: 4550474045127140467, guid: 0bdf3b1eec9e176438b9da7ce04cbae6,
         type: 3}
       propertyPath: scale
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bdf3b1eec9e176438b9da7ce04cbae6, type: 3}
@@ -4127,7 +4127,7 @@ GameObject:
   - component: {fileID: 1844472520}
   m_Layer: 9
   m_Name: Box019
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4956,7 +4956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a0bb82ade1cbfe140ac62920f9e25af2, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a0bb82ade1cbfe140ac62920f9e25af2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5037,7 +5037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d17cf8bf859913145827b90095bc3271, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d17cf8bf859913145827b90095bc3271, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5250,7 +5250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a7ad471f66fd067499c4bfe3e50c2bd5, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a7ad471f66fd067499c4bfe3e50c2bd5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5740,7 +5740,7 @@ GameObject:
   - component: {fileID: 453360160}
   m_Layer: 9
   m_Name: Rectangle010
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5760,7 +5760,7 @@ GameObject:
   - component: {fileID: 1202331}
   m_Layer: 9
   m_Name: Rectangle007
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5780,7 +5780,7 @@ GameObject:
   - component: {fileID: 168505118}
   m_Layer: 9
   m_Name: Rectangle008
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5800,7 +5800,7 @@ GameObject:
   - component: {fileID: 2142660947}
   m_Layer: 9
   m_Name: Rectangle009
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6010,7 +6010,7 @@ GameObject:
   - component: {fileID: 277283013}
   m_Layer: 9
   m_Name: Box002
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6032,7 +6032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6347,7 +6347,7 @@ GameObject:
   - component: {fileID: 18388758}
   m_Layer: 9
   m_Name: ChamferCyl005
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6367,7 +6367,7 @@ GameObject:
   - component: {fileID: 682018449}
   m_Layer: 9
   m_Name: ChamferCyl004
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6387,7 +6387,7 @@ GameObject:
   - component: {fileID: 191429}
   m_Layer: 9
   m_Name: ChamferCyl003
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6407,7 +6407,7 @@ GameObject:
   - component: {fileID: 1091146541}
   m_Layer: 9
   m_Name: ChamferCyl002
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6459,21 +6459,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Constrains
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 54.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3332167588404345985, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 53.8
       objectReference: {fileID: 0}
     - target: {fileID: 3332167587833564120, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
         type: 3}
@@ -6545,6 +6530,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 48.3
       objectReference: {fileID: 0}
+    - target: {fileID: 3332167588404345985, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 53.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3332167587666341565, guid: 56f2c9cfef751bf4986387dd1ac25d3f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 54.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56f2c9cfef751bf4986387dd1ac25d3f, type: 3}
 --- !u!4 &2072691553 stripped
@@ -6574,7 +6574,7 @@ GameObject:
   - component: {fileID: 1793867943}
   m_Layer: 9
   m_Name: Plane002
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6594,7 +6594,7 @@ GameObject:
   - component: {fileID: 1661600636}
   m_Layer: 9
   m_Name: Plane005
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6614,7 +6614,7 @@ GameObject:
   - component: {fileID: 1412806350}
   m_Layer: 9
   m_Name: Plane006
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6634,7 +6634,7 @@ GameObject:
   - component: {fileID: 354688183}
   m_Layer: 9
   m_Name: Plane007
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6654,7 +6654,7 @@ GameObject:
   - component: {fileID: 2100318232}
   m_Layer: 9
   m_Name: Box028
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6674,7 +6674,7 @@ GameObject:
   - component: {fileID: 1609750658}
   m_Layer: 9
   m_Name: Plane008
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6694,7 +6694,7 @@ GameObject:
   - component: {fileID: 1651037652}
   m_Layer: 9
   m_Name: Plane009
-  m_TagString: Object/Normal
+  m_TagString: Object/Remove
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7129,7 +7129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_TagString
-      value: Object/Normal
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 62d77cbb2291daf4986664e99df69b82, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7289,6 +7289,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skateboard
       objectReference: {fileID: 0}
+    - target: {fileID: 372976683981156381, guid: b3e53827ee0082f43a57b210fb98bf77,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 372976683981253693, guid: b3e53827ee0082f43a57b210fb98bf77,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7357,6 +7362,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cacto
+      objectReference: {fileID: 0}
+    - target: {fileID: 1168225521852380702, guid: e94d4ce409fe4074798d3e8a154bcb29,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 1168225521852082750, guid: e94d4ce409fe4074798d3e8a154bcb29,
         type: 3}
@@ -7427,6 +7437,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Livro Aberto
       objectReference: {fileID: 0}
+    - target: {fileID: 1807180972257441790, guid: 5a86768dd9bf78c4f986dc23820fc738,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 1807180972256947166, guid: 5a86768dd9bf78c4f986dc23820fc738,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7495,6 +7510,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toast
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698133915796473682, guid: e2fed2f7ad0afa345aef263f1788d738,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 3698133915795987314, guid: e2fed2f7ad0afa345aef263f1788d738,
         type: 3}
@@ -7565,6 +7585,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Counter 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4400033887241586120, guid: a2500df4e622e014f89c9e75a82d80b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 4400033887241165288, guid: a2500df4e622e014f89c9e75a82d80b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7633,6 +7658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rat Trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506051402020696301, guid: 6031a4b5866c2434b80f2ec151d8cd79,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 5506051402020662477, guid: 6031a4b5866c2434b80f2ec151d8cd79,
         type: 3}
@@ -7703,6 +7733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toaster
       objectReference: {fileID: 0}
+    - target: {fileID: 6954134423512539535, guid: 5b4c48b69c3a8254fabd55f9d0a42694,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 6954134423512055215, guid: 5b4c48b69c3a8254fabd55f9d0a42694,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7771,6 +7806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Box001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419210162236233914, guid: bbf13e4426aed414b957fa4c6ba2bf9e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 7419210162235802778, guid: bbf13e4426aed414b957fa4c6ba2bf9e,
         type: 3}
@@ -7841,6 +7881,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Cadeira de Escrit\xF3rio"
       objectReference: {fileID: 0}
+    - target: {fileID: 7430272349170580165, guid: 801cc8cf4ba31fb4485beebc73eeb735,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 7430272349171066597, guid: 801cc8cf4ba31fb4485beebc73eeb735,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7909,6 +7954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Battery
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534485706594323559, guid: d50a90bdcdc95a340bb9db2931d02a8f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 7534485706594816071, guid: d50a90bdcdc95a340bb9db2931d02a8f,
         type: 3}
@@ -7979,6 +8029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
+    - target: {fileID: 7540692034757420163, guid: d936c3b806abb8b459c875601cd3967c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
+      objectReference: {fileID: 0}
     - target: {fileID: 7540692034757261475, guid: d936c3b806abb8b459c875601cd3967c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8047,6 +8102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 8742133549266095438, guid: 9506d81ff0247374a83f334694f7caf7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object/Remove
       objectReference: {fileID: 0}
     - target: {fileID: 8742133549265604974, guid: 9506d81ff0247374a83f334694f7caf7,
         type: 3}

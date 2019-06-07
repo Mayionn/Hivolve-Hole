@@ -11,8 +11,10 @@ TagManager:
   - Object/Metal
   - Button/Endless
   - Button/Normal
-  - Object/Normal
   - Object/Water
+  - Object/Popcorn
+  - Material/Vortex
+  - Object/Remove
   layers:
   - Default
   - TransparentFX
