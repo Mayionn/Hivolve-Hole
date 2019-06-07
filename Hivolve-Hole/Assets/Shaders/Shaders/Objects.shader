@@ -70,7 +70,7 @@
                
                 float shadow = SHADOW_ATTENUATION(i);
 
-                float lightIntensity = smoothstep(0, 0.01, lightdot * shadow);
+                float lightIntensity = smoothstep(0, 1, lightdot * shadow);
 
                 float4 light = lightIntensity * _LightColor0;
 				
