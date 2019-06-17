@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Advertisements;
 
 public partial class QuestManager : MonoBehaviour
 {
@@ -144,7 +145,10 @@ public partial class QuestManager : MonoBehaviour
 
     int ChooseQuestType()
     {
-        return Random.Range(0, 3);
+        int a = Random.Range(0, 3);
+        if (a == 1)
+            a = 0;
+        return a;
     }
 
     Vector2 CalculateConditionNumber(int questType)
@@ -259,10 +263,10 @@ public partial class QuestManager : MonoBehaviour
             case 0:
                 break;
             case 1:
-                QuestsCompleted++; NewQuest();
+                QuestsCompleted++; NewQuest(); Advertisement.Show();
                 break;
             case -1:
-                QuestsFailed++; NewQuest();
+                QuestsFailed++; NewQuest(); Advertisement.Show();
                 break;
         }
     }

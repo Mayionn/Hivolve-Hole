@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Advertisements;
+
 
 public class CheckFinish : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class CheckFinish : MonoBehaviour
         {
             gm.levelGameObjects.Add(transform.GetChild(i));
         }
+
+        Advertisement.Show();
     }
 
     // Update is called once per frame

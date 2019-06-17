@@ -36,7 +36,7 @@ public partial class QuestManager
                 a.tag = "Material/Wood";
             }
             else
-                a.tag = "Object/Normal";
+                a.tag = "Object/Remove";
             a.gameObject.transform.localScale = new Vector3(1, 1, 1);
             a.layer = 9;
         }
@@ -44,7 +44,7 @@ public partial class QuestManager
         {
             var a = Instantiate(objScp.objectList[(int)currentQuest.objects.y], RandomPosition(), Quaternion.identity, badCondition.transform);
             a.layer = 9;
-            a.tag = "Object/Normal";
+            a.tag = "Object/Remove";
             a.gameObject.transform.localScale = new Vector3(1, 1, 1); ;
         }
     }

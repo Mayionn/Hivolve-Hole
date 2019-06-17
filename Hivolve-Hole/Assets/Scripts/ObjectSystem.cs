@@ -10,7 +10,7 @@ public static class ObjectSystem
         "Object/Remove", "Object/Fire", "Object/Vortex", "Object/Metal", "Object/Water",
         "Material/Wood", "Material/Metal", "Material/Vortex",
         "Button/Endless", "Button/Normal",
-        "Object/Popcorn"
+        "Object/Popcorn", "Object/Normals"
     };
 
     /*
