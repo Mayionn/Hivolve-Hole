@@ -8,9 +8,8 @@ public static class ObjectSystem
 
     public static string[] ObjectTagList = {
         "Object/Remove", "Object/Fire", "Object/Vortex", "Object/Metal", "Object/Water",
-        "Material/Wood", "Material/Metal", "Material/Vortex",
-        "Button/Endless", "Button/Normal",
-        "Object/Popcorn", "Object/Normal"
+        "Material/Wood", "Material/Metal", "Material/Vortex", "Object/Popcorn", "Object/Normal",
+        "Button/Endless", "Button/Normal"
     };
 
     /*
