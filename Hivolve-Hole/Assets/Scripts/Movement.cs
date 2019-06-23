@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
 
     public Transform topLeftConstrain;
     public Transform bottomRightConstrain;
+
     void Start()
     {
         PowerupSystem.ChangePowerup(PowerupSystem.Powerups.None);
