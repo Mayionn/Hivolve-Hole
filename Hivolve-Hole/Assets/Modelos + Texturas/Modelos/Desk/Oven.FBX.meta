@@ -1,34 +1,14 @@
 fileFormatVersion: 2
-guid: 13770ea35e3c003438f5f62357ac54f0
+guid: 1334d4ec1cb2df44b9cfbe04def24bb0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Box003
-    100002: //RootNode
-    100004: Grid
-    100006: Object001
-    100008: Oven
-    400000: Box003
-    400002: //RootNode
-    400004: Grid
-    400006: Object001
-    400008: Oven
-    2100000: Oven
-    2100002: Travessa
-    2100004: Grelha
-    2100006: 'Material #20'
-    2300000: Box003
-    2300002: Grid
-    2300004: Object001
-    2300006: Oven
-    3300000: Box003
-    3300002: Grid
-    3300004: Object001
-    3300006: Oven
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Full Oven
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Oven
-    4300002: Box003
-    4300004: Grid
-    4300006: Object001
   externalObjects: {}
   materials:
     importMaterials: 1

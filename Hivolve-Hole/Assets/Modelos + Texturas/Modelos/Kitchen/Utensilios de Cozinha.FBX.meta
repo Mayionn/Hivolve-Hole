@@ -48,7 +48,22 @@ ModelImporter:
     4300010: Box007
     4300012: Box008
     4300014: Box009
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cutlery
+    second: {fileID: 2100000, guid: efbcda42d6a489143b821c155947ea6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Wood
+    second: {fileID: 2100000, guid: 39c72fc8b3b3dc545a1d6bb8240433f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wooden Cutlery
+    second: {fileID: 2100000, guid: dae213eeaeede494ea8472d626fa3b33, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
