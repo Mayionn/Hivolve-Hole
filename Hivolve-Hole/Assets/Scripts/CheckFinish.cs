@@ -24,7 +24,7 @@ public class CheckFinish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gm.levelGameObjects.Count == 0)
+        if (transform.childCount == 0)
         {
             gm.finished = true;
             if (levelIndex > gm.lastLevelCompleted)

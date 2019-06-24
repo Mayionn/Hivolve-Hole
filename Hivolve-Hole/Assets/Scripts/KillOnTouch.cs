@@ -66,8 +66,6 @@ public class KillOnTouch : MonoBehaviour
                         cam.newTargetVector();
 
                     }
-                    gm.levelGameObjects.Remove(other.gameObject.transform); //!BUG HERE - not really a bug but wtv. It works fine
-
                 }
 
                 Destroy(other.gameObject);

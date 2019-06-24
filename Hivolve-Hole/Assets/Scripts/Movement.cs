@@ -13,6 +13,9 @@ public class Movement : MonoBehaviour
     Vector2 joystickPosition;
     Vector3 mvmntVector;
 
+    public GameObject mesh;
+    private Bounds bounds;
+
     public Transform topLeftConstrain;
     public Transform bottomRightConstrain;
 
@@ -26,11 +29,14 @@ public class Movement : MonoBehaviour
 
         Physics.autoSimulation = true;
         gm.paused = false;
+
+        bounds = mesh.GetComponent<MeshRenderer>().bounds;
     }
 
     // Update is called once per frame
     void Update()
     {
+        bounds = mesh.GetComponent<MeshRenderer>().bounds;
         if (!gm.paused)
         {
 
@@ -69,22 +75,27 @@ public class Movement : MonoBehaviour
     void InsideConstraints()
     {
         Vector3 np = this.transform.position;
-        if (np.x < topLeftConstrain.position.x)
+
+        if (np.x - bounds.extents.x < topLeftConstrain.position.x)
         {
-            np.x = topLeftConstrain.position.x;
+            Debug.Log("A");
+            np.x = topLeftConstrain.position.x + bounds.extents.x;
         }
-        else if (np.x > bottomRightConstrain.position.x)
+        else if (np.x + bounds.extents.x > bottomRightConstrain.position.x)
         {
-            np.x = bottomRightConstrain.position.x;
+            Debug.Log("B");
+            np.x = bottomRightConstrain.position.x - bounds.extents.x;
         }
 
-        if (np.z > topLeftConstrain.position.z)
+        if (np.z + bounds.extents.z > topLeftConstrain.position.z)
         {
-            np.z = topLeftConstrain.position.z;
+            Debug.Log("C");
+            np.z = topLeftConstrain.position.z - bounds.extents.z;
         }
-        else if (np.z < bottomRightConstrain.position.z)
+        else if (np.z - bounds.extents.z < bottomRightConstrain.position.z)
         {
-            np.z = bottomRightConstrain.position.z;
+            Debug.Log("D");
+            np.z = bottomRightConstrain.position.z + bounds.extents.z;
         }
         this.transform.position = np;
     }

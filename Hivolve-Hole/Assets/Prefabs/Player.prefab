@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   gm: {fileID: 11400000, guid: 28d62f87283d0da47846e0854374f32d, type: 2}
+  mesh: {fileID: 4550474045211378405}
   topLeftConstrain: {fileID: 0}
   bottomRightConstrain: {fileID: 0}
 --- !u!1 &4550474044876067685
@@ -1027,6 +1028,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 299572521484159015, guid: 10040760df4d0ae43ae86af6e4bc1f31,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 11400000, guid: 28d62f87283d0da47846e0854374f32d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10040760df4d0ae43ae86af6e4bc1f31, type: 3}
 --- !u!1 &344628206709080897 stripped
