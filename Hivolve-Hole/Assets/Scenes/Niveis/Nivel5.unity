@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 29d8bfd617a28944392f158d66a118e5, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 38806a86f658e224e981bb678c2a1f5d, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.22586456, g: 0.29472303, b: 0.40055656, a: 1}
+  m_IndirectSpecularColor: {r: 0.74999607, g: 0.81445324, b: 0.42700145, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2901,7 +2901,6 @@ Transform:
   - {fileID: 862664863}
   - {fileID: 2081277332}
   - {fileID: 737797750}
-  - {fileID: 1182461313}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4141,31 +4140,14 @@ GameObject:
   - component: {fileID: 1182461313}
   - component: {fileID: 1182461312}
   - component: {fileID: 1182461311}
-  - component: {fileID: 1182461310}
   - component: {fileID: 1182461314}
   m_Layer: 0
   m_Name: Pathway
-  m_TagString: Object/Remove
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1182461310
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182461309}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!23 &1182461311
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4219,11 +4201,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182461309}
   m_LocalRotation: {x: -0, y: -0.0036427295, z: -0, w: 0.9999934}
-  m_LocalPosition: {x: 1.29, y: 0.11, z: 11.21}
+  m_LocalPosition: {x: 1.29, y: 0.12, z: 11.21}
   m_LocalScale: {x: 2.3918402, y: 1, z: 0.35017356}
   m_Children: []
-  m_Father: {fileID: 660852056}
-  m_RootOrder: 60
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -0.41700003, z: 0}
 --- !u!64 &1182461314
 MeshCollider:
@@ -4236,7 +4218,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1182582902
