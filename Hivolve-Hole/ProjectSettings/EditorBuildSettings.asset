@@ -8,31 +8,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseLevelMenu.unity
     guid: 6bb456bfc0a38a640b6bf7f580ace9ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/EndlessSystem.unity
     guid: 57f1c1d4bc258f94aa7c1605ea37f68f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Niveis/Nivel1.unity
     guid: 66f8e19e4695dad489da701fe621accb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Niveis/Nivel2.unity
     guid: 2bdf3c0c56f2c6f458c1d4db56fd4913
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Niveis/Nivel3.unity
     guid: 46ebc97fb261b8e4c9d0172354eef0f4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Niveis/Nivel4.unity
     guid: ded230ee12eae74428427419bb704073
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Niveis/Nivel5.unity
     guid: 913bf83f94187f642801d884a779b9bc
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Niveis/Nivel6.unity
     guid: c263a78d926fe5f4a8d10d178096e709
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Niveis/Nivel7.unity
+    guid: 7e6f641ef6aad4c48bf6b73e1cb62554
+  - enabled: 1
+    path: Assets/Scenes/Niveis/Nivel8.unity
+    guid: f53ef0560f343cb43a3e0d81015c8519
+  - enabled: 1
+    path: Assets/Scenes/Niveis/Nivel9.unity
+    guid: f93adda45093f424ab199d209144e6ea
+  - enabled: 1
+    path: Assets/Scenes/Niveis/Nivel10.unity
+    guid: e9e67740a62935140afac5d7d1a606cd
+  - enabled: 1
+    path: Assets/Scenes/Niveis/Nivel11.unity
+    guid: 77e7a318b2513664cb6c8a40f7d1a34d
   m_configObjects: {}
